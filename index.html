@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>DemoYang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="记录学习Java和Go的知识总结">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DemoYang">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="DemoYang">
+<meta property="og:description" content="记录学习Java和Go的知识总结">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="yang">
+<meta property="article:tag" content="记录学习Java和Go的知识总结">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="DemoYang" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-0123456789ABCDEF",
+          enable_page_level_ads: true
+      });
+  </script>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "Home"; 
+
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/categories"] = "Categories"; 
+
+  themeMenus["/tags"] = "Tags"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body>
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="DemoYang" rel="home"> DemoYang </a>
+            
+          </h1>
+
+          
+            <div class="site-description">记录学习Java和Go的知识总结</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main">
+  
+    <article id="post-Java面试冲击"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2022/10/25/Java%E9%9D%A2%E8%AF%95%E5%86%B2%E5%87%BB/">Java面试冲击</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2022/10/25/Java%E9%9D%A2%E8%AF%95%E5%86%B2%E5%87%BB/" class="article-date">
+	  <time datetime="2022-10-25T11:21:19.000Z" itemprop="datePublished">十月 25, 2022</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h2><h4 id="1-x3D-x3D-和equals的区别？"><a href="#1-x3D-x3D-和equals的区别？" class="headerlink" title="1. &#x3D;&#x3D;和equals的区别？"></a><strong>1. &#x3D;&#x3D;和equals的区别？</strong></h4><p>&#x3D;&#x3D;解释</p>
+<p>基本类型和引用类型 &#x3D;&#x3D; 的作用效果是不同的，如下</p>
+<p><strong>基本类型</strong>：比较的是值是否相同；</p>
+<p><strong>引用类型</strong>：比较的是引用是否相同；</p>
+<p>代码示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">x</span> <span class="operator">=</span> <span class="string">&quot;string&quot;</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">y</span> <span class="operator">=</span> <span class="string">&quot;string&quot;</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">z</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;string&quot;</span>);</span><br><span class="line">System.out.println(x==y); <span class="comment">// true</span></span><br><span class="line">System.out.println(x==z); <span class="comment">// false</span></span><br><span class="line">System.out.println(x.equals(y)); <span class="comment">// true</span></span><br><span class="line">System.out.println(x.equals(z)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p>注：因为 x 和 y 指向的是同一个引用，所以 &#x3D;&#x3D; 也是 true，而 new String()方法则重写开辟了内存空间，所以 &#x3D;&#x3D; 结果为 false，而 equals 比较的一直是值，所以结果都为 true。</p>
+<p>equals解释</p>
+<p>equals 本质上就是 &#x3D;&#x3D;，只不过 String 和 Integer 等重写了 equals 方法，把它变成了值比较。看下面的代码就明白了。</p>
+<p>首先来看默认情况下 equals 比较一个有相同值的对象，代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">Student</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(<span class="string">&quot;张三&quot;</span>); </span><br><span class="line"><span class="type">Student</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(<span class="string">&quot;张三&quot;</span>); </span><br><span class="line">System.out.println(s1.equals(s2)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//equals源码</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Compares this string to the specified object.  The result is &#123;<span class="doctag">@code</span></span></span><br><span class="line"><span class="comment"> * true&#125; if and only if the argument is not &#123;<span class="doctag">@code</span> null&#125; and is a &#123;<span class="doctag">@code</span></span></span><br><span class="line"><span class="comment"> * String&#125; object that represents the same sequence of characters as this</span></span><br><span class="line"><span class="comment"> * object.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span>  anObject</span></span><br><span class="line"><span class="comment"> *         The object to compare this &#123;<span class="doctag">@code</span> String&#125; against</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span>  &#123;<span class="doctag">@code</span> true&#125; if the given object represents a &#123;<span class="doctag">@code</span> String&#125;</span></span><br><span class="line"><span class="comment"> *          equivalent to this string, &#123;<span class="doctag">@code</span> false&#125; otherwise</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@see</span>  #compareTo(String)</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@see</span>  #equalsIgnoreCase(String)</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">equals</span><span class="params">(Object anObject)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">this</span> == anObject) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (anObject <span class="keyword">instanceof</span> String) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">anotherString</span> <span class="operator">=</span> (String)anObject;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> value.length;</span><br><span class="line">        <span class="keyword">if</span> (n == anotherString.value.length) &#123;</span><br><span class="line">            <span class="type">char</span> v1[] = value;</span><br><span class="line">            <span class="type">char</span> v2[] = anotherString.value;</span><br><span class="line">            <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span> (n-- != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (v1[i] != v2[i])</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注：原来是 String 重写了 Object 的 equals 方法，把引用比较改成了值比较。</p>
+<p><strong>总结 ：</strong>&#x3D;&#x3D; 对于基本类型来说是值比较，对于引用类型来说是比较的是引用；而 equals 默认情况下是引用比较，只是很多类重新了 equals 方法，比如 String、Integer 等把它变成了值比较，所以一般情况下 equals 比较的是值是否相等。</p>
+<h4 id="2-重载和重写的区别？"><a href="#2-重载和重写的区别？" class="headerlink" title="2.重载和重写的区别？"></a>2.重载和重写的区别？</h4><p>重载(Overload)</p>
+<p>发生在同一个类中，方法名必须相同，参数类型不同、个数不同，方法返回值和访问修饰符可以不同，发生在编译时。</p>
+<p>重写(Override)</p>
+<p>发生在父子类中，方法名、参数列表必须相同，个数相同，返回值相同，如果父类方法访问修饰符为private则子类就不能重写该方法。</p>
+<h4 id="3-什么是多态？"><a href="#3-什么是多态？" class="headerlink" title="3.什么是多态？"></a>3.什么是多态？</h4><p>①指允许不同类的对象对同一消息做出响应，即同一消息可以根据发送对象的不同而采用多种不同的行为方式。</p>
+<p>②接口的不同表现方式</p>
+<p>是同一个行为具有多个不同表现形式或形态的能力，多态就是同一接口，使用不同的实例而执行不同操作。</p>
+<p><strong>必要条件</strong>：继承、重写、向上转型</p>
+<h4 id="4-String、StringBuffer、StringBuilder的区别？"><a href="#4-String、StringBuffer、StringBuilder的区别？" class="headerlink" title="4.String、StringBuffer、StringBuilder的区别？"></a>4.String、StringBuffer、StringBuilder的区别？</h4><p>一、字符修改上的区别</p>
+<p>String: 不可变字符序列（String类中使用final关键字修饰字符数组来保存字符串，所以String对象是不可变的）、线程安全</p>
+<p>StringBuffer: 可变字符序列、效率低、线程安全</p>
+<p>StringBuilder: 可变字符序列、效率高、线程不安全</p>
+<p>二、初始化上的区别</p>
+<p>String可以空赋值，后者不行，会报错</p>
+<p>小结：（1）如果要操作少量的数据用 String；</p>
+<p>（2）多线程操作字符串缓冲区下操作大量数据 StringBuffer；</p>
+<p>（3）单线程操作字符串缓冲区下操作大量数据 StringBuilder。</p>
+<h4 id="5-final、finally、finalize关键字使用区别？"><a href="#5-final、finally、finalize关键字使用区别？" class="headerlink" title="5.final、finally、finalize关键字使用区别？"></a>5.final、finally、finalize关键字使用区别？</h4><p><strong>final</strong><br> final修饰类，方法，基本类型变量，引用的时候分别有不同的意思<br> 修饰类 表示该类不能被继承<br> 修饰方法 表示该方法不能被重写<br> 修饰基本类型变量 表示该变量只能被赋值一次<br> 修饰引用 表示该引用只有一次指向对象的机会<br><strong>finally</strong><br>  finally 是用于异常处理的场面，无论是否有异常抛出，都会执行<br><strong>finalize</strong><br>  finalize是Object的方法，所有类都继承了该方法。 当一个对象满足垃圾回收的条件，并且被回收的时候，其      finalize()方法就会被调用。</p>
+<h4 id="6-抽象类和接口的区别？"><a href="#6-抽象类和接口的区别？" class="headerlink" title="6.抽象类和接口的区别？"></a>6.抽象类和接口的区别？</h4><p>接口和抽象类从使用上看非常的相似，那么下面通过以下的表格对两者进行区分：</p>
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>比较</th>
+<th>抽象类</th>
+<th>接口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>关键字</td>
+<td>使用 abstract class 声明</td>
+<td>使用 interface 声明</td>
+</tr>
+<tr>
+<td>2</td>
+<td>定义</td>
+<td>包含一个抽象方法的类</td>
+<td>抽象方法和全局常量的集合</td>
+</tr>
+<tr>
+<td>3</td>
+<td>组成</td>
+<td>属性、方法、构造、常量、抽象方法</td>
+<td>全局常量、抽象方法</td>
+</tr>
+<tr>
+<td>4</td>
+<td>权限</td>
+<td>抽象方法的权限可以任意</td>
+<td>只能是 public 权限</td>
+</tr>
+<tr>
+<td>5</td>
+<td>使用</td>
+<td>通过 extends 关键字继承抽象类</td>
+<td>通过 implements 关键字实现接口</td>
+</tr>
+<tr>
+<td>6</td>
+<td>局限</td>
+<td>抽象类存在单继承局限</td>
+<td>没有此局限，一个子类可以实现多个接口</td>
+</tr>
+<tr>
+<td>7</td>
+<td>顺序</td>
+<td>一个子类只能先继承抽象类再实现多个接口</td>
+<td>一个子类只能先继承抽象类再实现多个接口</td>
+</tr>
+<tr>
+<td>8</td>
+<td>设计模式</td>
+<td>模板设计</td>
+<td>工厂设计、代理设计</td>
+</tr>
+<tr>
+<td>9</td>
+<td>实际作用</td>
+<td>只能做一个模板使用</td>
+<td>作为标准、表示能力</td>
+</tr>
+<tr>
+<td>10</td>
+<td>使用</td>
+<td>两者没有什么本质的区别，但是从实际上来看，如果一个程序中抽象类和接口都可以<br/>使用的话，则一定要优先考虑接口，因为接口可以避免单继承所带来的局限。</td>
+<td>两者没有什么本质的区别，但是从实际上来看，如果一个程序中抽象类和接口都可以<br/>使用的话，则一定要优先考虑接口，因为接口可以避免单继承所带来的局限。</td>
+</tr>
+<tr>
+<td>11</td>
+<td>实例化</td>
+<td>都是依靠对象多态性，通过子类进行对象实例化的</td>
+<td>都是依靠对象多态性，通过子类进行对象实例化的</td>
+</tr>
+</tbody></table>
+<h4 id="7-与-amp-与-amp-amp-的区别？"><a href="#7-与-amp-与-amp-amp-的区别？" class="headerlink" title="7.|与||, &amp;与&amp;&amp;的区别？"></a>7.|与||, &amp;与&amp;&amp;的区别？</h4><p>一、||和&amp;&amp;定义为<strong>逻辑运算符</strong>，I 和 &amp; 定义为<strong>位运算符</strong>。</p>
+<p>&amp;&amp;如果两个操作数都非零，则条件为真；</p>
+<p>|| 如果两个操作数中有任意一个非零，则条件为真。</p>
+<p>二、&amp;是<strong>长</strong>位与</p>
+<p>&amp;&amp;是<strong>短</strong>位与</p>
+<p>&amp;&amp;表示前面如果false, 就会中断。</p>
+<p>三、||表示<strong>或</strong>者的意思，&amp;&amp;表示并<strong>且</strong>的意思。</p>
+<h4 id="8-static关键字的使用"><a href="#8-static关键字的使用" class="headerlink" title="8.static关键字的使用?"></a>8.static关键字的使用?</h4><p>static变量也称作静态变量</p>
+<p>static方法一般称作静态方法，通常在一个类中定义一个方法</p>
+<p>static关键字在类中可以声明属性和方法<br>声明的属性将称为全局属性，声明的方法将称为类方法</p>
+<p>概念：方便在设创建对象的情况下来进行调用，static关键字修饰类、方法、变量、代码块</p>
+<p>特点，static是一个修饰符，用于修饰成员</p>
+<p><strong>注：</strong></p>
+<p>使用static声明的方法，不能访问非static的操作</p>
+<p>非static声明的方法，可以访问static声明的属性和方法。</p>
+<ul>
+<li>static修饰的成员变量和方法，从属于类</li>
+<li>普通变量和方法从属于对象</li>
+<li>静态方法不能调用非静态成员，编译会报错</li>
+</ul>
+<p><strong>static变量也称为静态变量，静态变量和非静态变量的区别：</strong></p>
+<ul>
+<li>静态变量被所有对象共享，在内存中只有一个副本，在类初次加载的时候才会初始化</li>
+<li>非静态变量是对象所拥有的，在创建对象的时候被初始化，存在多个副本，各个对象拥有的副本互不影响</li>
+</ul>
+<h4 id="9-Java四个修饰符-private-default-protected-private区别，修饰类，方法，属性？"><a href="#9-Java四个修饰符-private-default-protected-private区别，修饰类，方法，属性？" class="headerlink" title="9.Java四个修饰符 private ,default,protected,private区别，修饰类，方法，属性？"></a>9.Java四个修饰符 private ,default,protected,private区别，修饰类，方法，属性？</h4><table>
+<thead>
+<tr>
+<th>作用域</th>
+<th>当前类</th>
+<th>同包</th>
+<th>子类</th>
+<th>其他</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+</tr>
+<tr>
+<td>default</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+</tr>
+<tr>
+<td>private</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+</tbody></table>
+<p><strong>private</strong>: Java语言中对访问权限限制的最窄的修饰符，一般称之为“私有的”。被其修饰的属性以及方法只能被该类的对象访问，其子类不能访问，更不能允许跨包访问。</p>
+<p><strong>default</strong>：即不加任何访问修饰符，通常称为“默认访问权限“或者“包访问权限”。该模式下，只允许在同一个包中进行访问。</p>
+<p><strong>protected</strong>: 介于public 和 private 之间的一种访问修饰符，一般称之为“保护访问权限”。被其修饰的属性以及方法只能被类本身的方法及子类访问，即使子类在不同的包中也可以访问。</p>
+<p><strong>public</strong>： Java语言中访问限制最宽的修饰符，一般称之为“公共的”。被其修饰的类、属性以及方法不仅可以跨类访问，而且允许跨包访问。</p>
+<h4 id="10-String是基本数据类型吗？"><a href="#10-String是基本数据类型吗？" class="headerlink" title="10.String是基本数据类型吗？"></a><strong>10.String是基本数据类型吗？</strong></h4><p>String 不属于基础类型，基础类型有 8 种：byte、boolean、char、short、int、float、long、double，而 String 属于对象。</p>
+<h4 id="11-String-str-x3D-”i”与-String-str-x3D-new-String-“i”-一样吗？"><a href="#11-String-str-x3D-”i”与-String-str-x3D-new-String-“i”-一样吗？" class="headerlink" title="11.String str&#x3D;”i”与 String str&#x3D;new String(“i”)一样吗？"></a>11.String str&#x3D;”i”与 String str&#x3D;new String(“i”)一样吗？</h4><p>不一样，因为内存的分配方式不一样。String str&#x3D;”i”的方式，Java 虚拟机会将其分配到常量池中；而 String str&#x3D;new String(“i”) 则会被分到堆内存中。</p>
+<h4 id="12-String-str-x3D-new-String-“abc”-创建了几个对象？"><a href="#12-String-str-x3D-new-String-“abc”-创建了几个对象？" class="headerlink" title="12.String str &#x3D; new String(“abc”)创建了几个对象？"></a>12.String str &#x3D; new String(“abc”)创建了几个对象？</h4><p>创建了两个，”abc”本身创建在常量池，通过new又创建在堆中引用。</p>
+<h4 id="13-String类的常用方法有哪些"><a href="#13-String类的常用方法有哪些" class="headerlink" title="13.String类的常用方法有哪些?"></a>13.String类的常用方法有哪些?</h4><ul>
+<li>indexOf()：返回指定字符的索引。</li>
+<li>charAt()：返回指定索引处的字符。</li>
+<li>replace()：字符串替换。</li>
+<li>trim()：去除字符串两端空白。</li>
+<li>split()：分割字符串，返回一个分割后的字符串数组。</li>
+<li>getBytes()：返回字符串的 byte 类型数组。</li>
+<li>length()：返回字符串长度。</li>
+<li>toLowerCase()：将字符串转成小写字母。</li>
+<li>toUpperCase()：将字符串转成大写字符。</li>
+<li>substring()：截取字符串。</li>
+<li>equals()：字符串比较。</li>
+</ul>
+<h4 id="14-Object类的常见方法有哪些？"><a href="#14-Object类的常见方法有哪些？" class="headerlink" title="14.Object类的常见方法有哪些？"></a>14.Object类的常见方法有哪些？</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> Class <span class="title function_">getClass</span><span class="params">()</span><span class="comment">//native方法，用于返回当前运行时对象的Class对象，使用了 final关键字修饰，故不允许子类重写。 </span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span> <span class="comment">//native方法，用于返回对象的哈希码，主要使用在哈希表中，比如JDK中的 HashMap。 </span></span><br><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">equals</span><span class="params">(Object obj)</span><span class="comment">//用于比较2个对象的内存地址是否相等，String类对该方法进行了重写用户比较字符串的值是否相等。 </span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">native</span> Object <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException<span class="comment">//naitive方法，用于创建并返回当前对象的一份拷贝。一般情况下，对于任何对象 x，表达式 x.clone() != x 为true，x.clone().getClass() == x.getClass() 为true。Object本身没有实现Cloneable接口，所以不重写clone方法并且进行调用的话会发生 CloneNotSupportedException异常。 </span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span><span class="comment">//返回类的名字@实例的哈希码的16进制的字符串。建议Object所有的子类都重写这个方法。 </span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notify</span><span class="params">()</span><span class="comment">//native方法，并且不能重写。唤醒一个在此对象监视器上等待的线程(监视 器相当于就是锁的概念)。如果有多个线程在等待只会任意唤醒一个。 </span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notifyAll</span><span class="params">()</span><span class="comment">//native方法，并且不能重写。跟notify一样，唯一的区别就是会唤醒 在此对象监视器上等待的所有线程，而不是一个线程。 </span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout)</span> <span class="keyword">throws</span> InterruptedException<span class="comment">//native方法，并且不能 重写。暂停线程的执行。注意：sleep方法没有释放锁，而wait方法释放了锁 。timeout是等待时间。 </span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout, <span class="type">int</span> nanos)</span> <span class="keyword">throws</span> InterruptedException<span class="comment">//多了nanos参数， 这个参数表示额外时间（以毫微秒为单位，范围是 0-999999）。 所以超时的时间还需要加上nanos毫秒。 </span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException<span class="comment">//跟之前的2个wait方法一样，只不过该方法一直等 待，没有超时时间这个概念 </span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">finalize</span><span class="params">()</span> <span class="keyword">throws</span> Throwable &#123; &#125;<span class="comment">//实例被垃圾回收器回收的时候触发的操作</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="15-错误-Error-和异常-Exception-的区别？"><a href="#15-错误-Error-和异常-Exception-的区别？" class="headerlink" title="15.错误(Error)和异常(Exception)的区别？"></a>15.错误(Error)和异常(Exception)的区别？</h4><p>常见的错误：</p>
+<p>Error:是程序无法处理的错误</p>
+<p>Java虚拟机运行错误(VirtualMachineError)</p>
+<p><strong>StackOverFlowError、 OutOfMemoryError</strong></p>
+<p>这些错误是不可查的。</p>
+<p>Exception: 是程序本身可以处理的异常</p>
+<p>常见的异常：<strong>NullPointerException</strong>(空指针异常)、<strong>ArithmeticException</strong>(算术运算异常)、<strong>ArrayIndexOutBoundsException</strong>(数组下标越界异常)等等。</p>
+<p><strong>注：异常能被程序本身可以处理，错误无法处理。</strong></p>
+<h4 id="16-Int和-Integer区别-什么是自动拆箱和装箱？"><a href="#16-Int和-Integer区别-什么是自动拆箱和装箱？" class="headerlink" title="16.Int和 Integer区别,什么是自动拆箱和装箱？"></a>16.Int和 Integer区别,什么是自动拆箱和装箱？</h4><p>int: 基本数据类型， Integer:是int的包装类</p>
+<p>装箱：将基本数据类型用它们对应的引用类型包装起来。</p>
+<p>拆箱：将包装类型转化为基本数据类型。</p>
+<h4 id="17-什么是Java序列化？什么情况下需要序列化？"><a href="#17-什么是Java序列化？什么情况下需要序列化？" class="headerlink" title="17.什么是Java序列化？什么情况下需要序列化？"></a>17.什么是Java序列化？什么情况下需要序列化？</h4><p>简单说就是为了保存在内存中的各种对象的状态（也就是实例变量，不是方法），并且可以把保存的对象状态再读出来。虽然你可以用你自己的各种各样的方法来保存object states，但是Java给你提供一种应该比你自己好的保存对象状态的机制，那就是序列化。</p>
+<h5 id="什么情况下需要序列化："><a href="#什么情况下需要序列化：" class="headerlink" title="什么情况下需要序列化："></a>什么情况下需要序列化：</h5><ul>
+<li>当你想把的内存中的对象状态保存到一个文件中或者数据库中时候；</li>
+<li>当你想用套接字在网络上传送对象的时候；</li>
+<li>当你想通过RMI传输对象的时候；</li>
+</ul>
+<h4 id="18-枚举在哪些场景使用？"><a href="#18-枚举在哪些场景使用？" class="headerlink" title="18.枚举在哪些场景使用？"></a>18.枚举在哪些场景使用？</h4><p>常用场景<br>1、作为普通的常量使用，如星期、季节、颜色、城市等等;通常配合switch语句使用。<br>例1：<br>定义</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//周一到周天枚举</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="title class_">WeekEnum</span> &#123;</span><br><span class="line">    MON,TUES,WED,THURS,FRI,SAT,SUN;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用</p>
+<p>jdk1.7开始switch语句开始支持String类型，而jdk1.6之前只支持int,char,enum类型，使用枚举的话，能使代码的可读性大大增强</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestEnum</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">WeekEnum</span> <span class="variable">week</span> <span class="operator">=</span> WeekEnum.TUES;</span><br><span class="line">        <span class="keyword">switch</span> (week) &#123;</span><br><span class="line">            <span class="keyword">case</span> MON:</span><br><span class="line">                System.out.println(<span class="string">&quot;星期一&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> TUES:</span><br><span class="line">                System.out.println(<span class="string">&quot;星期二&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> WED:</span><br><span class="line">                System.out.println(<span class="string">&quot;星期三&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> THURS:</span><br><span class="line">                System.out.println(<span class="string">&quot;星期四&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FRI:</span><br><span class="line">                System.out.println(<span class="string">&quot;星期五&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> SAT:</span><br><span class="line">                System.out.println(<span class="string">&quot;星期六&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> SUN:</span><br><span class="line">                System.out.println(<span class="string">&quot;星期天&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2、往枚举中添加变量、构造函数、以达到灵活获取指定值的目的（注： Java 要求必须先定义 enum 实例，否则编译会报错）；通常用于一些业务系统中定义一些固定值，如用于匹配db中的字段值等。<br>例2：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义　利用构造函数将变量赋值，然后通过get方法获取指定值</span></span><br><span class="line">　<span class="keyword">public</span> <span class="keyword">enum</span> <span class="title class_">CompanyEnum</span> &#123;</span><br><span class="line">    SF(<span class="string">&quot;顺丰速运&quot;</span>, <span class="number">1001</span>), YTO(<span class="string">&quot;圆通速递&quot;</span>, <span class="number">1002</span>),STO(<span class="string">&quot;申通物流&quot;</span>,<span class="number">1003</span>),YD(<span class="string">&quot;韵达快运&quot;</span>,<span class="number">1004</span>),YZPY(<span class="string">&quot;中国邮政&quot;</span>,<span class="number">1005</span>);</span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">CompanyEnum</span><span class="params">(String company, <span class="type">int</span> code)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.company = company;</span><br><span class="line">        <span class="built_in">this</span>.code = code;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> String company; <span class="comment">// 公司名称</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> code; <span class="comment">// 公司编码</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getCompany</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> company;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setCompany</span><span class="params">(String company)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.company = company;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getCode</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setCode</span><span class="params">(<span class="type">int</span> code)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.code = code;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结<br>　　1、所有枚举类都是继承java.lang.Enum类，可以把 enum 看成是一个普通的 class，它们都可以定义一些属性和方法，不过，因为java是单继承，所以枚举不能再继承其它类，但枚举可以实现接口。<br>　　２、不使用枚举也可以用其它方式代替实现类似的效果，而灵活地运用枚举可以带来许多便利，但也切忌为了用枚举而用枚举，这样反而可能带来不利的影响。</p>
+<h4 id="19-什么io-举例各io分别使用什么场景？"><a href="#19-什么io-举例各io分别使用什么场景？" class="headerlink" title="19.什么io, 举例各io分别使用什么场景？"></a>19.什么io, 举例各io分别使用什么场景？</h4><p>IO流分类：输入流和输出流，字节流和字符流</p>
+<p>基类：字节流InputStream和OutputStream， 字符流Reader和wirter</p>
+<p>![](C:\Users\潘潘\Desktop\面试资料\Java io.jpg)</p>
+<h4 id="20-Java8新特性，Lambda、Stream分别怎么使用？"><a href="#20-Java8新特性，Lambda、Stream分别怎么使用？" class="headerlink" title="20.Java8新特性，Lambda、Stream分别怎么使用？"></a>20.Java8新特性，Lambda、Stream分别怎么使用？</h4><p>lambda表达式</p>
+<p>表示的是匿名函数</p>
+<p>语法: 参数、箭头、然后是方法体</p>
+<p>代码示例:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//匿名内部类</span></span><br><span class="line"> Comparator&lt;Integer&gt; cpt = <span class="keyword">new</span> <span class="title class_">Comparator</span>&lt;Integer&gt;() &#123;</span><br><span class="line">     <span class="meta">@Override</span></span><br><span class="line">     <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compare</span><span class="params">(Integer o1, Integer o2)</span> &#123;</span><br><span class="line">         <span class="keyword">return</span> Integer.compare(o1,o2);</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;;</span><br><span class="line"></span><br><span class="line"> TreeSet&lt;Integer&gt; set = <span class="keyword">new</span> <span class="title class_">TreeSet</span>&lt;&gt;(cpt);</span><br><span class="line"></span><br><span class="line"> System.out.println(<span class="string">&quot;=========================&quot;</span>);</span><br><span class="line"></span><br><span class="line"> <span class="comment">//使用lambda表达式</span></span><br><span class="line"> Comparator&lt;Integer&gt; cpt2 = (x,y) -&gt; Integer.compare(x,y);</span><br><span class="line"> TreeSet&lt;Integer&gt; set2 = <span class="keyword">new</span> <span class="title class_">TreeSet</span>&lt;&gt;(cpt2);</span><br></pre></td></tr></table></figure>
+
+<p>Stream转化指定对象</p>
+<p>&#x2F;&#x2F; 1、数组</p>
+<p>Object[] ints &#x3D; stream.toArray(String[]::new);</p>
+<p>&#x2F;&#x2F; 2、字符串</p>
+<p>String collect1 &#x3D; stream.collect(Collectors.joining()).toString();</p>
+<p>&#x2F;&#x2F; 3、集合</p>
+<p>List<String> list1 &#x3D; (List<String>) stream.collect(Collectors.toList());</p>
+<p>&#x2F;&#x2F; 4、map</p>
+<p>Map&lt;String, String&gt; map1 &#x3D; (Map&lt;String, String&gt;) stream.collect(Collectors.toMap(x -&gt; x, y -&gt; “value” + y));</p>
+<h4 id="21-什么是泛型"><a href="#21-什么是泛型" class="headerlink" title="21.什么是泛型"></a><strong>21.什么是泛型</strong></h4><p>JDK5引入的新特性，泛型的本质就是参数化类型，也就是所操作的数据类型被指定为一个参数</p>
+<p><strong>泛型的好处</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.类型安全。泛型的主要目的就是提高Java程序的类型安全。通过知道使用泛型定义的变量的类型限制，编译器可以在一个高得多的程度上验证类型假设。没有泛型，这些假设只能我们自己记或者代码注释；</span><br><span class="line"></span><br><span class="line">2.消除强制类型转换。泛型一个附带好处是，消除代码中许多强制类型的转换。减少代码出错率，更好阅读；</span><br><span class="line"></span><br><span class="line">3.潜在的性能收益。可以带来更好的优化可能。在泛型的初始实现中，编译器强制类型转换（没有泛型的话，程序员会指定这些强制类型转换，）插入生成的字节码中。但是更多类型信息可用于编译器这一事实，为以后的JVM可以带来更好的优化。由于泛型的实现方式，支持泛型几乎不需要JVM或类文件更改，所有工作都在编译器中完成，编译器生成的类没有泛型（和强制类型转换），只是来确保数据类型安全。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>泛型方法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">泛型类，是在实例化类的时候指明泛型的具体类型；泛型方法，是在调用方法的时候指明泛型的具体类型。</span><br></pre></td></tr></table></figure>
+
+<p>注：</p>
+<p>无论何时，如果你能做到，你就该尽量使用泛型方法。也就是说，如果使用泛型方法将整个类泛型化，那么就应该使用泛型方法。另外对于一个static的方法而已，无法访问泛型类型的参数。所以如果static方法要使用泛型能力，就必须使其成为泛型方法。</p>
+<h4 id="22-反射"><a href="#22-反射" class="headerlink" title="22.反射"></a>22.反射</h4><p>反射主要是指程序可以访问、检测和修改它本身状态或行为的一种能力</p>
+<p>java反射：</p>
+<p>在Java运行时环境中，对于任意一个类，能否知道这个类有哪些属性和方法？对于任意一个对象，能否调用它的任意一个方法<br> Java反射机制主要提供了以下功能：</p>
+<ul>
+<li>在运行时判断任意一个对象所属的类。</li>
+<li>在运行时构造任意一个类的对象。</li>
+<li>在运行时判断任意一个类所具有的成员变量和方法。</li>
+<li>在运行时调用任意一个对象的方法。</li>
+</ul>
+<h2 id="Java集合"><a href="#Java集合" class="headerlink" title="Java集合"></a>Java集合</h2><h4 id="List、Set、Map的区别？"><a href="#List、Set、Map的区别？" class="headerlink" title="List、Set、Map的区别？"></a>List、Set、Map的区别？</h4><p>List是有序集合，元素可以重复</p>
+<p>set是无序集合，元素不可重复</p>
+<p>map是键值对，key是无需不可重复的</p>
+<p>说下set中的元素为什么不允许重复</p>
+<p>因为map中的key是不允许重复的，所以set中的元素不能重复</p>
+<h4 id="Collection和Collections的区别？"><a href="#Collection和Collections的区别？" class="headerlink" title="Collection和Collections的区别？"></a>Collection和Collections的区别？</h4><p>java.util.Collection 是一个 <strong>集合接口</strong>。它提供了对集合对象进行基本操作的通用接口方法。Collection接口在Java 类库中有很多具体的实现。Collection接口的意义是为各种具体的集合提供了最大化的统一操作方式。</p>
+<p>java.util.Collections 是一个包装类。它包含有各种有关集合操作的 <strong>静态多态方法</strong>。此类 <strong>不能实例化</strong>，就像一 <strong>个工具类</strong>，服务于Java的Collection框架。</p>
+<h4 id="LinkList和ArrayList的区别？"><a href="#LinkList和ArrayList的区别？" class="headerlink" title="LinkList和ArrayList的区别？"></a>LinkList和ArrayList的区别？</h4><p>ArrayList如果需要随机访问列表中的元素，特别是列表规模很大时，应该使用ArrayList.</p>
+<p>ArrayList是数组结构，所以定位很快，但是插入和删除很慢。</p>
+<p>LinkedList需要对列表进行大量插入和删除操作，特别是插入的元素在列表头部和中部时，则使用LinkedList</p>
+<p>LInkedList是双向链表结构，所以插入和删除很快，但是定位慢。</p>
+<h4 id="HashMap和HashTable、TreeMap的区别？"><a href="#HashMap和HashTable、TreeMap的区别？" class="headerlink" title="HashMap和HashTable、TreeMap的区别？"></a>HashMap和HashTable、TreeMap的区别？</h4><p>TreeMap是有序的，HashMap和HashTable是无序的。</p>
+<p>HashTable的key和value都不允许为null，HashMap的key和value都允许为null。</p>
+<p>HashTable是线程安全的，HashMap是非线程安全的。</p>
+<p>初始容量的不同</p>
+<p>HashTable的默认的初始大小为11，之后每次扩充，容量变为原来的2n+1。HashMap默认的初始化大小为16。之后每次扩充，容量变为原来的2倍。</p>
+<h4 id="解释为什么set的元素是不允许重复？"><a href="#解释为什么set的元素是不允许重复？" class="headerlink" title="解释为什么set的元素是不允许重复？"></a>解释为什么set的元素是不允许重复？</h4><p>因为map中的key是不允许重复的，所以set中的元素不能重复</p>
+<h4 id="Hash冲突处理？"><a href="#Hash冲突处理？" class="headerlink" title="Hash冲突处理？"></a>Hash冲突处理？</h4><p>一种可能冲突的解决方法是采用二次散列函数</p>
+<p>另一种方法是在每一个表项中存储一个条目的列表，所有的散列得到同一个表索引的表链的条目都会添加到这个索引值对应的列表中，在执行键检索时，只需要遍历这个列表即可，检查每一个元素是否相等，直到找到匹配。</p>
+<h4 id="为什么要重写equals和hashcode方法？"><a href="#为什么要重写equals和hashcode方法？" class="headerlink" title="为什么要重写equals和hashcode方法？"></a>为什么要重写equals和hashcode方法？</h4><p>需要将对象放入hashmap、hashset等集合中的类，就需要重写</p>
+<p>equals方法没有重写的话，用于判断对象的内存地址引用是否用一个地址，重写之后一般用来比较对象的内容是否相等</p>
+<p>HashMap的底层原理？</p>
+<p><strong>一：HashMap的节点</strong>：HashMap是一个集合，键值对的集合,源码中每个节点用Node&lt;K,V&gt;表示</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">Node</span>&lt;K,V&gt; <span class="keyword">implements</span> <span class="title class_">Map</span>.Entry&lt;K,V&gt; &#123;</span><br><span class="line">   <span class="keyword">final</span> <span class="type">int</span> hash;</span><br><span class="line">   <span class="keyword">final</span> K key;</span><br><span class="line">   V value;</span><br><span class="line">   Node&lt;K,V&gt; next;</span><br></pre></td></tr></table></figure>
+
+<p>Node是一个内部类，这里的key为键，value为值，next指向下一个元素，可以看出HashMap中的元素不是一个单纯的键值对，<strong>还包含下一个元素的引用</strong>。</p>
+<p><strong>二：HashMap的数据结构</strong>：HashMap的数据结构为 **数组+(链表或红黑树)**，上图：</p>
+<p>![](C:\Users\潘潘\Pictures\Saved Pictures\1656677875696.jpg)</p>
+<p>注：<strong>红黑树，是一种自平衡的二叉查找数，是一种高效的查找数根节点是黑色的。</strong></p>
+<p>为什么采用这种结构来存储元素呢？</p>
+<p><strong>数组的特点：查询效率高，插入，删除效率低</strong>。</p>
+<p><strong>链表的特点：查询效率低，插入删除效率高</strong>。</p>
+<p>在HashMap底层使用数组加（链表或红黑树）的结构完美的解决了数组和链表的问题，使得查询和插入，删除的效率都很高。</p>
+<p><strong>三：HashMap存储元素的过程：</strong></p>
+<p>有这样一段代码：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;String,String&gt; map = new HashMap&lt;String,String&gt;();</span><br><span class="line">map.put(&quot;刘德华&quot;,&quot;张惠妹&quot;);</span><br><span class="line">map.put(&quot;张学友&quot;,&quot;大S&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>现在我要把键值对 “刘德华”,”张惠妹”存入map:</p>
+<p>第一步：计算出键“刘德华”的hashcode，该值用来定位要将这个元素存放到数组中的什么位置.</p>
+<p>数组是何如转成list?</p>
+<p>Map中如何取key, value值？</p>
+<h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2><h4 id="什么是类加载机制？"><a href="#什么是类加载机制？" class="headerlink" title="什么是类加载机制？"></a>什么是类加载机制？</h4><p>·    加载：根据查找路径找到相应的 class 文件然后导入；</p>
+<p>·    检查：检查加载的 class 文件的正确性；</p>
+<p>·    准备：给类中的静态变量分配内存空间；</p>
+<p>·    解析：虚拟机将常量池中的符号引用替换成直接引用的过程。符号引用就理解为一个标示，而在直接引用直接指向内存中的地址；</p>
+<p>·    初始化：对静态变量和静态代码块执行初始化工作。</p>
+<p>加载、连接（验证、准备、解析）、初始化、使用、卸载</p>
+<p><strong>加载：编译后的.class静态文件转换到内存中（方法区）</strong></p>
+<p>连接：将Java类的二进制代码合并到JVM的运行状态之中的过程</p>
+<p>初始化：执行初始化方法()的过程，是类加载的最后一步，这一步真正执行初始化的代码逻辑。</p>
+<p>卸载：执行了System.exit()方法</p>
+<p>程序正常执行结束</p>
+<p>程序在执行过程中遇到了异常或错误而异常终止</p>
+<p>由于操作系统出现错误而导致Java虚拟机进程终止</p>
+<h4 id="什么是双亲委派？"><a href="#什么是双亲委派？" class="headerlink" title="什么是双亲委派？"></a>什么是双亲委派？</h4><p><img src="C:\Users\潘潘\AppData\Roaming\Typora\typora-user-images\image-20221024144849078.png" alt="image-20221024144849078"></p>
+<p> 一个类加载器需要加载类，那么首先它会把这个类加载请求委派给父类加载器去完成，如果</p>
+<p>父类还有父类则委托， 一直递归到顶层。</p>
+<h4 id="JVM的原理，谈谈你对JVM的理解？"><a href="#JVM的原理，谈谈你对JVM的理解？" class="headerlink" title="JVM的原理，谈谈你对JVM的理解？"></a>JVM的原理，谈谈你对JVM的理解？</h4><p>·    类加载器（ClassLoader）</p>
+<p>·    运行时数据区（Runtime Data Area）</p>
+<p>·    执行引擎（Execution Engine）</p>
+<p>·    本地库接口（Native Interface）</p>
+<p>组件的作用： 首先通过类加载器（ClassLoader）会把 Java 代码转换成字节码，运行时数据区（Runtime Data Area）再把字节码加载到内存中，而字节码文件只是 JVM 的一套指令集规范，并不能直接交给底层操作系统去执行，因此需要特定的命令解析器执行引擎（Execution Engine），将字节码翻译成底层系统指令，再交由 CPU 去执行，而这个过程中需要调用其他语言的本地库接口（Native Interface）来实现整个程序的功能。</p>
+<h4 id="JVM内存模型有哪些？"><a href="#JVM内存模型有哪些？" class="headerlink" title="JVM内存模型有哪些？"></a>JVM内存模型有哪些？</h4><p>程序计数器：当前线程所执行的字节码的行号指示器，用于记录正在执行的虚拟机字节指令地址，线程私有。</p>
+<p>Java虚拟栈：存放基本数据类型、对象的引用、方法出口等，线程私有。</p>
+<p>Native方法栈：和虚拟栈相似，只不过它服务于Native方法，线程私有。</p>
+<p>Java堆：java内存最大的一块，所有对象实例、数组都存放在java堆，GC回收的地方，线程共享。</p>
+<p>方法区：存放已被加载的类信息、常量、静态变量、即时编译器编译后的代码数据等。（即永久带），回收目标主要是常量池的回收和类型的卸载，各线程共享</p>
+<h4 id="GC垃圾回收机制？"><a href="#GC垃圾回收机制？" class="headerlink" title="GC垃圾回收机制？"></a>GC垃圾回收机制？</h4><p>不同的对象生命周期不同。把不同生命周期的对象放在不同代上，不同代上采用最合适它的垃圾回收方式进行回收。<br>JVM中共划分为三个代：年轻代、年老代和持久代，</p>
+<p>年轻代：存放所有新生成的对象；<br>年老代：在年轻代中经历了N次垃圾回收仍然存活的对象，将被放到年老代中，故都是一些生命周期较长的对象；<br>持久代：用于存放静态文件，如Java类、方法等。</p>
+<p>判断对象是否需要回收的方法有两种：<br>1.引用计数<br>当某对象的引用数为0时，便可以进行垃圾收集。<br>2.对象引用遍历<br>果某对象不能从这些根对象的一个（至少一个）到达，则将它作为垃圾收集。在对象遍历阶段，gc必须记住哪些对象可以到达，以便删除不可到达的对象，这称为标记（marking）对象。</p>
+<h4 id="jvm有哪几种垃圾回收器？"><a href="#jvm有哪几种垃圾回收器？" class="headerlink" title="jvm有哪几种垃圾回收器？"></a>jvm有哪几种垃圾回收器？</h4><p>·    Serial：最早的单线程串行垃圾回收器。</p>
+<p>·    Serial Old：Serial 垃圾回收器的老年版本，同样也是单线程的，可以作为 CMS 垃圾回收器的备选预案。</p>
+<p>·    ParNew：是 Serial 的多线程版本。</p>
+<p>·    Parallel 和 ParNew 收集器类似是多线程的，但 Parallel 是吞吐量优先的收集器，可以牺牲等待时间换取系统的吞吐量。</p>
+<p>·    Parallel Old 是 Parallel 老生代版本，Parallel 使用的是复制的内存回收算法，Parallel Old 使用的是标记-整理的内存回收算法。</p>
+<p>·    CMS：一种以获得最短停顿时间为目标的收集器，非常适用 B&#x2F;S 系统。</p>
+<p>·    G1：一种兼顾吞吐量和停顿时间的 GC 实现，是 JDK 9 以后的默认 GC 选项。</p>
+<h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><h4 id="进程、线程、和携程的区别？"><a href="#进程、线程、和携程的区别？" class="headerlink" title="进程、线程、和携程的区别？"></a>进程、线程、和携程的区别？</h4><ul>
+<li><strong>进程</strong>：拥有自己独立的堆和栈，既不共享堆，也不共享栈，进程由操作系统调度；</li>
+<li><strong>线程</strong>：拥有自己独立的栈和共享的堆，共享堆，不共享栈，标准线程由操作系统调度；</li>
+<li><strong>协程</strong>：拥有自己独立的栈和共享的堆，共享堆，不共享栈，协程由程序员在协程的代码里显示调度。</li>
+</ul>
+<p><strong>进程：</strong> 进程是一个具有一定独立功能的程序关于某个<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E6%95%B0%E6%8D%AE%E9%9B%86&spm=1001.2101.3001.7020">数据集</a>合上的一次运行活动，是系统资源分配和独立运行的最小单位；</p>
+<p><strong>线程：</strong> 线程是进程的一个执行单元，是任务调度和系统执行的最小单位；</p>
+<p><strong>协程：</strong> 协程是一种用户态的轻量级线程，协程的调度完全由用户控制。</p>
+<h4 id="并发和并行的区别？"><a href="#并发和并行的区别？" class="headerlink" title="并发和并行的区别？"></a>并发和并行的区别？</h4><p>并发：多个线程在同一个cpu下运行</p>
+<p>并行：各个线程分别在多个cpu下运行</p>
+<h4 id="线程有哪几种创建方式？"><a href="#线程有哪几种创建方式？" class="headerlink" title="线程有哪几种创建方式？"></a>线程有哪几种创建方式？</h4><p>创建线程有4种方式：</p>
+<p>1.继承java.lang.Thread类：extends</p>
+<p>2.实现Runnable接口： implements</p>
+<p>3.实现callable接口</p>
+<p>4.线程池创建</p>
+<h4 id="run-和start-的区别？"><a href="#run-和start-的区别？" class="headerlink" title="run()和start()的区别？"></a>run()和start()的区别？</h4><p>run() 仅仅是封装被线程执行的代码，直接调用是普通方法</p>
+<p>start() 启动了线程，由JVM去调用该线程run()方法</p>
+<h4 id="多线程的有哪几种状态？"><a href="#多线程的有哪几种状态？" class="headerlink" title="多线程的有哪几种状态？"></a>多线程的有哪几种状态？</h4><p><img src="C:\Users\潘潘\AppData\Roaming\Typora\typora-user-images\image-20221024152241284.png" alt="image-20221024152241284"></p>
+<p>新建：当一个Thread类或者其子类被调用时，新生的线程对象处于新建状态，</p>
+<p>​     此时它已经有了相应的内存空间和其他资源，在新建状态下的线程不会被执行；</p>
+<p> 就绪：当线程被创建，并调用了start方法，该线程就进入了就绪状态，</p>
+<p>​     该状态下的线程位于可运行池（线程池）等待获得cpu的使用权；</p>
+<p> 运行：处于该状态的线程专用cpu</p>
+<p>​     只有处于就绪状态的线程才有机会转为运行状态；</p>
+<p> 阻塞：放弃cpu资源，让其他资源获取，</p>
+<p>​     五种阻塞原因：</p>
+<p>​      1.位于等待池：执行wait方法，jvm就会将该线程放于等待池；</p>
+<p>​      2.位于锁池：试图获得某个对象同步锁时，如果该对象的同步锁已经被其他线程占用，</p>
+<p>​            jvm会将这个线程放在这个对象的锁池中；</p>
+<p>​      3.执行了sleep方法；</p>
+<p>​      4.调用其他线程join方法；</p>
+<p>​      5.发出IO请求时；</p>
+<p>死亡：run方法结束，线程结束；</p>
+<h4 id="什么是线程死锁？如何避免死锁？"><a href="#什么是线程死锁？如何避免死锁？" class="headerlink" title="什么是线程死锁？如何避免死锁？"></a>什么是线程死锁？如何避免死锁？</h4><p>多个线程同时被阻塞，它们中的一个或者等待某个资源释放</p>
+<p>由于线程被无限期地阻塞，因为程序不可能正常能不能终止</p>
+<p>如何避免线程死锁？</p>
+<p>我们只要破坏产生死锁的四个条件中的其中一个就可以了</p>
+<p>破坏互斥条件</p>
+<p>这个条件我们办法破坏，因为我们用锁本来就是想让他们互斥的</p>
+<p>破坏请求与保持条件</p>
+<p>一次性申请所有的资源</p>
+<p>破坏不剥夺条件</p>
+<p>占用部分资源的线程进一步申请其他资源时，如果申请不到，可以主动释放它占有的资源</p>
+<p>破坏循环等待条件</p>
+<p>靠按序申请资源来预防。按某一顺序申请资源，释放资源则反序释放。破坏循环等待条件。</p>
+<h4 id="多线程锁的使用场景？"><a href="#多线程锁的使用场景？" class="headerlink" title="多线程锁的使用场景？"></a>多线程锁的使用场景？</h4><p>1、常见的浏览器、Web服务(现在写的web是中间件帮你完成了线程的控制)，web处理请求，各种专用服务器(如游戏服务器)</p>
+<p>2、servlet多线程</p>
+<p>3、FTP下载，多线程操作文件</p>
+<p>4、数据库用到的多线程</p>
+<p>5、分布式计算</p>
+<p>6、tomcat，tomcat内部采用多线程，上百个客户端访问同一个WEB应用，tomcat接入后就是把后续的处理扔给一个新的线程来处理，这个新的线程最后调用我们的servlet程序，比如doGet或者dpPost方法</p>
+<p>7、后台任务：如定时向大量(100W以上)的用户发送邮件；定期更新配置文件、任务调度(如quartz)，一些监控用于定期信息采集</p>
+<p>8、自动作业处理：比如定期备份日志、定期备份数据库</p>
+<p>9、异步处理：如发微博、记录日志</p>
+<p>10、页面异步处理：比如大批量数据的核对工作(有10万个手机号码，核对哪些是已有用户)</p>
+<p>11、数据库的数据分析(待分析的数据太多)，数据迁移</p>
+<p>12、多步骤的任务处理，可根据步骤特征选用不同个数和特征的线程来协作处理，多任务的分割，由一个主线程分割给多个线程完成</p>
+<p>13、desktop应用开发，一个费时的计算开个线程，前台加个进度条显示</p>
+<p>14、swing编程</p>
+<p>假如执行100个任务，用多线程怎么如何保证全部执行？</p>
+<h2 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a>MyBatis</h2><h4 id="和-的区别？"><a href="#和-的区别？" class="headerlink" title="#{}和${}的区别？"></a>#{}和${}的区别？</h4><p>#{}预编译处理，防止sql注入</p>
+<p>${}字符串替换，不能防止sql注入</p>
+<h4 id="什么是sql注入，是怎么产生的？何如防止sql注入？"><a href="#什么是sql注入，是怎么产生的？何如防止sql注入？" class="headerlink" title="什么是sql注入，是怎么产生的？何如防止sql注入？"></a>什么是sql注入，是怎么产生的？何如防止sql注入？</h4><h2 id="SQL注入的原理"><a href="#SQL注入的原理" class="headerlink" title="SQL注入的原理"></a>SQL注入的原理</h2><p>SQL 注入的原理主要有以下 4 点：</p>
+<h4 id="1）恶意拼接查询"><a href="#1）恶意拼接查询" class="headerlink" title="1）恶意拼接查询"></a>1）恶意拼接查询</h4><p>我们知道，SQL 语句可以查询、插入、更新和删除数据，且使用分号来分隔不同的命令。例如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> users <span class="keyword">WHERE</span> user_id <span class="operator">=</span> $user_id</span><br></pre></td></tr></table></figure>
+
+<p>其中，user_id 是传入的参数，如果传入的参数值为“1234; DELETE FROM users”，那么最终的查询语句会变为：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> users <span class="keyword">WHERE</span> user_id <span class="operator">=</span> <span class="number">1234</span>; <span class="keyword">DELETE</span> <span class="keyword">FROM</span> users</span><br></pre></td></tr></table></figure>
+
+<p>如果以上语句执行，则会删除 users 表中的所有数据。</p>
+<h4 id="2）利用注释执行非法命令。"><a href="#2）利用注释执行非法命令。" class="headerlink" title="2）利用注释执行非法命令。"></a>2）利用注释执行非法命令。</h4><p>SQL 语句中可以插入注释。例如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">AS</span> <span class="string">&#x27;num&#x27;</span> <span class="keyword">FROM</span> game_score <span class="keyword">WHERE</span> game_id<span class="operator">=</span><span class="number">24411</span> <span class="keyword">AND</span> version<span class="operator">=</span>$version</span><br></pre></td></tr></table></figure>
+
+<p>如果 version 包含了恶意的字符串<code>&#39;-1&#39; OR 3 AND SLEEP(500)--</code>，那么最终查询语句会变为：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">AS</span> <span class="string">&#x27;num&#x27;</span> <span class="keyword">FROM</span> game_score <span class="keyword">WHERE</span> game_id<span class="operator">=</span><span class="number">24411</span> <span class="keyword">AND</span> version<span class="operator">=</span><span class="string">&#x27;-1&#x27;</span> <span class="keyword">OR</span> <span class="number">3</span> <span class="keyword">AND</span> SLEEP(<span class="number">500</span>)<span class="comment">--</span></span><br></pre></td></tr></table></figure>
+
+<p>以上恶意查询只是想耗尽系统资源，SLEEP(500) 将导致 SQL 语句一直运行。如果其中添加了修改、删除数据的恶意指令，那么将会造成更大的破坏。</p>
+<h4 id="3）传入非法参数"><a href="#3）传入非法参数" class="headerlink" title="3）传入非法参数"></a>3）传入非法参数</h4><p>SQL 语句中传入的字符串参数是用单引号引起来的，如果字符串本身包含单引号而没有被处理，那么可能会篡改原本 SQL 语句的作用。 例如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> user_name <span class="keyword">WHERE</span> user_name <span class="operator">=</span> $user_name</span><br></pre></td></tr></table></figure>
+
+<p>如果 user_name 传入参数值为 G’chen，那么最终的查询语句会变为：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> user_name <span class="keyword">WHERE</span> user_name <span class="operator">=</span><span class="string">&#x27;G&#x27;</span>chen<span class="string">&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>一般情况下，以上语句会执行出错，这样的语句风险比较小。虽然没有语法错误，但可能会恶意产生 SQL 语句，并且以一种你不期望的方式运行。</p>
+<h4 id="4）添加额外条件"><a href="#4）添加额外条件" class="headerlink" title="4）添加额外条件"></a>4）添加额外条件</h4><p>在 SQL 语句中添加一些额外条件，以此来改变执行行为。条件一般为真值表达式。例如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> users <span class="keyword">SET</span> userpass<span class="operator">=</span><span class="string">&#x27;$userpass&#x27;</span> <span class="keyword">WHERE</span> user_id<span class="operator">=</span>$user_id;</span><br></pre></td></tr></table></figure>
+
+<p>如果 user_id 被传入恶意的字符串“1234 OR TRUE”，那么最终的 SQL 语句会变为：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> users <span class="keyword">SET</span> userpass<span class="operator">=</span> <span class="string">&#x27;123456&#x27;</span> <span class="keyword">WHERE</span> user_id<span class="operator">=</span><span class="number">1234</span> <span class="keyword">OR</span> <span class="literal">TRUE</span>;</span><br></pre></td></tr></table></figure>
+
+<p>这将更改所有用户的密码。</p>
+<h2 id="避免SQL注入"><a href="#避免SQL注入" class="headerlink" title="避免SQL注入"></a>避免SQL注入</h2><p>对于 SQL 注入，我们可以采取适当的预防措施来保护数据安全。下面是避免 SQL 注入的一些方法。</p>
+<h4 id="1-过滤输入内容，校验字符串"><a href="#1-过滤输入内容，校验字符串" class="headerlink" title="1. 过滤输入内容，校验字符串"></a>1. 过滤输入内容，校验字符串</h4><p>过滤输入内容就是在数据提交到数据库之前，就把用户输入中的不合法字符剔除掉。可以使用编程语言提供的处理函数或自己的处理函数来进行过滤，还可以使用正则表达式匹配安全的字符串。</p>
+<p>如果值属于特定的类型或有具体的格式，那么在拼接 SQL 语句之前就要进行校验，验证其有效性。比如对于某个传入的值，如果可以确定是整型，则要判断它是否为整型，在浏览器端（客户端）和服务器端都需要进行验证。</p>
+<h4 id="2-参数化查询"><a href="#2-参数化查询" class="headerlink" title="2. 参数化查询"></a>2. 参数化查询</h4><p>参数化查询目前被视作是预防 SQL 注入攻击最有效的方法。参数化查询是指在设计与数据库连接并访问数据时，在需要填入数值或数据的地方，使用参数（Parameter）来给值。</p>
+<p>MySQL 的参数格式是以“?”字符加上参数名称而成，如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE myTable <span class="type">SET</span> <span class="variable">c1</span> <span class="operator">=</span> ?c1, c2 = ?c2, c3 = ?c3 <span class="type">WHERE</span> <span class="variable">c4</span> <span class="operator">=</span> ?c4</span><br></pre></td></tr></table></figure>
+
+<p>在使用参数化查询的情况下，数据库服务器不会将参数的内容视为 SQL 语句的一部分来进行处理，而是在数据库完成 SQL 语句的编译之后，才套用参数运行。因此就算参数中含有破坏性的指令，也不会被数据库所运行。</p>
+<h4 id="3-安全测试、安全审计"><a href="#3-安全测试、安全审计" class="headerlink" title="3. 安全测试、安全审计"></a>3. 安全测试、安全审计</h4><p>除了开发规范，还需要合适的工具来确保代码的安全。我们应该在开发过程中应对代码进行审查，在测试环节使用工具进行扫描，上线后定期扫描安全漏洞。通过多个环节的检查，一般是可以避免 SQL 注入的。</p>
+<p>有些人认为存储过程可以避免 SQL 注入，存储过程在传统行业里用得比较多，对于权限的控制是有一定用处的，但如果存储过程用到了动态查询，拼接 SQL，一样会存在安全隐患。</p>
+<p>下面是在开发过程中可以避免 SQL 注入的一些方法。</p>
+<h4 id="1-避免使用动态SQL"><a href="#1-避免使用动态SQL" class="headerlink" title="1. 避免使用动态SQL"></a>1. 避免使用动态SQL</h4><p>避免将用户的输入数据直接放入 SQL 语句中，最好使用准备好的语句和参数化查询，这样更安全。</p>
+<h4 id="2-不要将敏感数据保留在纯文本中"><a href="#2-不要将敏感数据保留在纯文本中" class="headerlink" title="2. 不要将敏感数据保留在纯文本中"></a>2. 不要将敏感数据保留在纯文本中</h4><p>加密存储在数据库中的私有&#x2F;机密数据，这样可以提供了另一级保护，以防攻击者成功地排出敏感数据。</p>
+<h4 id="3-限制数据库权限和特权"><a href="#3-限制数据库权限和特权" class="headerlink" title="3. 限制数据库权限和特权"></a>3. 限制数据库权限和特权</h4><p>将数据库用户的功能设置为最低要求；这将限制攻击者在设法获取访问权限时可以执行的操作。</p>
+<h4 id="4-避免直接向用户显示数据库错误"><a href="#4-避免直接向用户显示数据库错误" class="headerlink" title="4. 避免直接向用户显示数据库错误"></a>4. 避免直接向用户显示数据库错误</h4><p>攻击者可以使用这些错误消息来获取有关数据库的信息。</p>
+<h4 id="mybatis有哪几种分页方式？"><a href="#mybatis有哪几种分页方式？" class="headerlink" title="mybatis有哪几种分页方式？"></a>mybatis有哪几种分页方式？</h4><p>分页方式：逻辑分页和物理分页。</p>
+<p>逻辑分页： 使用 MyBatis 自带的 RowBounds 进行分页，它是一次性查询很多数据，然后在数据中再进行检索。</p>
+<p>物理分页： 自己手写 SQL 分页或使用分页插件 PageHelper，去数据库查询指定条数的分页数据的形式。</p>
+<h4 id="mybatis的一级缓存和二级缓存？"><a href="#mybatis的一级缓存和二级缓存？" class="headerlink" title="mybatis的一级缓存和二级缓存？"></a>mybatis的一级缓存和二级缓存？</h4><p>·    一级缓存：基于 PerpetualCache 的 HashMap 本地缓存，它的声明周期是和 SQLSession 一致的，有多个 SQLSession 或者分布式的环境中数据库操作，可能会出现脏数据。当 Session flush 或 close 之后，该 Session 中的所有 Cache 就将清空，默认一级缓存是开启的。</p>
+<p>·    二级缓存：也是基于 PerpetualCache 的 HashMap 本地缓存，不同在于其存储作用域为 Mapper 级别的，如果多个SQLSession之间需要共享缓存，则需要使用到二级缓存，并且二级缓存可自定义存储源，如 Ehcache。默认不打开二级缓存，要开启二级缓存，使用二级缓存属性类需要实现 Serializable 序列化接口(可用来保存对象的状态)。</p>
+<p>开启二级缓存数据查询流程：二级缓存 -&gt; 一级缓存 -&gt; 数据库。</p>
+<p>缓存更新机制：当某一个作用域(一级缓存 Session&#x2F;二级缓存 Mapper)进行了C&#x2F;U&#x2F;D 操作后，默认该作用域下所有 select 中的缓存将被 clear。</p>
+<h4 id="mybatis的实现原理？"><a href="#mybatis的实现原理？" class="headerlink" title="mybatis的实现原理？"></a>mybatis的实现原理？</h4><p>mybatis应用程序通过SqlSessionFactoryBuilder从mybatis-config.xml配置文件（也可以用Java文件配置的方式，需要添加@Configuration）来构建SqlSessionFactory（SqlSessionFactory是线程安全的）；</p>
+<p>然后，SqlSessionFactory的实例直接开启一个SqlSession，再通过SqlSession实例获得Mapper对象并运行Mapper映射的SQL语句，完成对数据库的CRUD和事务提交，之后关闭SqlSession。<br>————————————————<br>版权声明：本文为CSDN博主「圣斗士Morty」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/u014745069/article/details/80788127">https://blog.csdn.net/u014745069/article/details/80788127</a></p>
+<h2 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h2><h4 id="什么是spring"><a href="#什么是spring" class="headerlink" title="什么是spring?"></a>什么是spring?</h4><p>Spring是一种轻量级的开发框架，为了提高开发效率以及系统的可维护性。</p>
+<p>为什么用spring？</p>
+<p>方便解耦，简化开发</p>
+<p>核心技术：AOP、IOC</p>
+<p><strong>IOC: 控制反转 （高内聚低耦合）</strong> </p>
+<p>我们平时创建对象需要自己手动创建,现在对象都是通过spring容器ApplicationContext创建</p>
+<p>也就是ioc容器来控制对象</p>
+<p><strong>AOP: 面向切面编程</strong>，并且把应用业务逻辑和系统服务分开</p>
+<p>是通过预编译方式和运行期动态代理实现程序功能的统一维护的技术</p>
+<p>比如当我们需要为多个不具有继承关系的对象引入一个公共行为，例如日志、权限验证、事务等功能时，</p>
+<p>只能在在每个对象里引用公共行为。这样做不便于维护，而且有大量重复代码。</p>
+<p>AOP的出现弥补了OOP的这点不足。</p>
+<h4 id="SpringBoot自动装配原理？"><a href="#SpringBoot自动装配原理？" class="headerlink" title="SpringBoot自动装配原理？"></a>SpringBoot自动装配原理？</h4><p>1.SpringBoot启动会加载大量的自动配置类</p>
+<p>2.我们看我们需要的功能有没有SpringBoot默认写好的自动配置类；</p>
+<p>3.我们再来看这个自动配置类中到底配置了那些组件；（只要我们要用的组件有，我们就不需要再来配置了）</p>
+<p>4.给容器中自动配置类添加组件的时候，会从properties类中获取某些属性，我们就可以在配置文件中指定这些属性的值。</p>
+<p>Springboot自动装配核心注解@EnableAutoConfiguration       xxxxAutoConfiguration:自动配置类</p>
+<p>给容器中添加组件  @ComponentScan注解</p>
+<p>   配置 spring.properties   xxxxProperties:封装配置文件中相关属性</p>
+<h6 id="AutoConfigurationImportSelector-lt-DeferredImportSeletor-lt-ImportSeletor"><a href="#AutoConfigurationImportSelector-lt-DeferredImportSeletor-lt-ImportSeletor" class="headerlink" title="AutoConfigurationImportSelector&lt;DeferredImportSeletor&lt;ImportSeletor"></a>AutoConfigurationImportSelector&lt;DeferredImportSeletor&lt;ImportSeletor</h6><h4 id="spring的相关注解？"><a href="#spring的相关注解？" class="headerlink" title="spring的相关注解？"></a>spring的相关注解？</h4><p>@controller:用于定义控制器类，在spring项目中由控制器负责将用户发来的URL请求转发到对应的服务接口（service层），一般这个注解在类中，通常方法需要配合注解@RequestMapping。</p>
+<p>对应Spring MVC的控制层，主要用户接受用户请求并调用Service层返回数据给前端页面。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1 @Autowired:它可以对类成员变量、方法及构造函数进行标注，让 spring 完成 bean 自动装配的工作。</span><br><span class="line"></span><br><span class="line">2 @Autowired：自动导入依赖的bean</span><br><span class="line"></span><br><span class="line">3 @Autowired: 注解自动装配bean</span><br></pre></td></tr></table></figure>
+
+<p>@RequestMapping：提供路由信息，负责URL到Controller中的具体函数的映射。</p>
+<p>@Import：用来导入其他配置类。</p>
+<p>@Value：注入Spring boot application.properties配置的属性的值。</p>
+<p>@Bean：用@Bean标注方法等价于XML中配置的bean。</p>
+<p>@Service：一般用于修饰service层的组件</p>
+<p>@ComponentScan ：组件扫描，可自动发现和装配一些Bean。</p>
+<p>@Component：泛指组件，当组件不好归类的时候，我们可以使用这个注解进行标注。</p>
+<p>通用的注解，可标记任意类为Spring组件。</p>
+<p>@Repository :  对应持久层即Dao层，主要用于数据库相关操作。</p>
+<p>@Configuration：相当于传统的xml配置文件，如果有些第三方库需要用到xml文件，建议仍然通过@Configuration类作为项目的配置主类——可以使用@ImportResource注解加载xml配置文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Configuration: 指明当前类是一个配置类； 就是来替代之前的Spring配置文件</span><br></pre></td></tr></table></figure>
+
+<p>@SpringBootConfiguration: Spring Boot的配置类 @Configuration: 配置类上来标注这个注解</p>
+<p>@EnableAutoConfiguration: 开启自动配置功能</p>
+<p>@ImportResource：用来加载xml配置文件。</p>
+<p>@AutoConfigurationPackage: 自动配置包</p>
+<pre><code>   @Import(AutoConfigurationPackages.Registrar.class);
+
+   spring的底层注解@import, 给容器导入一个组件； 导入的组件由AutoConfigurationPackage.Regist
+</code></pre>
+<p>ar.class;</p>
+<h4 id="spring、springboot、springcloud的区别？"><a href="#spring、springboot、springcloud的区别？" class="headerlink" title="spring、springboot、springcloud的区别？"></a>spring、springboot、springcloud的区别？</h4><p>Spring 是一种生态。</p>
+<p>spring boot 是一种快速的开发框架。完全采用注解化（使用注解启动SpringMVC），简化XML配置，内置HTTP服务器（Tomcat、Jetty）。作用是简化Spring应用的初始搭建及开发，解决各种jar包版本冲突问题。</p>
+<p>Spring cloud 是一套完整的微服务框架。</p>
+<h4 id="什么是spring-bean的生命周期？"><a href="#什么是spring-bean的生命周期？" class="headerlink" title="什么是spring bean的生命周期？"></a>什么是spring bean的生命周期？</h4><p>Spring的生命周期主要指创建、初始化、销毁。Bean的生命周期主要由容器进行管理，我们可以自定义bean的初始化和销毁方法，容器在bean进行到生命周期的特定时间点，来调用自定义的初始化和销毁方法。</p>
+<p>实例化Bean –＞ Bean属性填充 –＞ 初始化Bean –＞销毁Bean</p>
+<p>spring 支持 5 种作用域，如下：</p>
+<p>·    singleton：spring ioc 容器中只存在一个 bean 实例，bean 以单例模式存在，是系统默认值；</p>
+<p>·    prototype：每次从容器调用 bean 时都会创建一个新的示例，既每次 getBean()相当于执行 new Bean()操作；</p>
+<p>·    Web 环境下的作用域：</p>
+<p>·    request：每次 http 请求都会创建一个 bean；</p>
+<p>·    session：同一个 http session 共享一个 bean 实例；</p>
+<p>·    global-session：用于 portlet 容器，因为每个 portlet 有单独的 session，globalsession 提供一个全局性的 http session。</p>
+<p><strong>注意</strong>： 使用 prototype 作用域需要慎重的思考，因为频繁创建和销毁 bean 会带来很大的性能开销。</p>
+<h4 id="SpringMVC的原理？"><a href="#SpringMVC的原理？" class="headerlink" title="SpringMVC的原理？"></a>SpringMVC的原理？</h4><p>1.用户发送请求至前端控制器DispatcherServlet(也叫中央处理器).</p>
+<p>2.DispatcherServlet收到请求调用HandlerMappering处理器映射器</p>
+<p>3.处理器映射器找到具体的处理器（可以根据<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=xml&spm=1001.2101.3001.7020">xml</a>配置、注解进行查找），生成处理器对象及处理器拦截器（如果有则生成）一并返回给DispatcherServlet.</p>
+<p>4.DispatcherServlet调用HandlerAdapter处理器适配器。</p>
+<p>5.HandlerAdapter经过适配调用具体的处理器（Controller,也叫后端控制器）。</p>
+<p>6.Controller执行完成返回ModelAndView.</p>
+<p>7.HandlerAdapter将controller执行结果ModelAndView返回给DispatcherServlet.</p>
+<p>8.DisPatcherServlet将ModelAndView传给ViewReslover视图解析器。</p>
+<p>9.ViewReslover解析后返回具体View.</p>
+<p>10.DispatcherServlet根据View进行渲染视图（即将模型数据填充至视图中）。</p>
+<p>11.DispatcherServlet响应用户。</p>
+<h4 id="什么是spring事务，spring事务的传播方式有哪些？"><a href="#什么是spring事务，spring事务的传播方式有哪些？" class="headerlink" title="什么是spring事务，spring事务的传播方式有哪些？"></a>什么是spring事务，spring事务的传播方式有哪些？</h4><p>spring事务主要是声明式事务和编程式事务</p>
+<p><strong>PROPAGATION_SUPPORTS ：支持（使用）当前事务，如果不存在事务就不使用事务</strong></p>
+<p><strong>PROPAGATION_MANDATORY ：支持（使用）当前事务，如果不存在就抛出异常</strong></p>
+<p><strong>PROPAGATION_REQUIRES_NEW ：如果有事务存在，则挂起当前事务，创建一个新事务。（不在同一事务）</strong></p>
+<p><strong>PROPAGATION_NOT_SUPPORTED ：已非事务的方式运行，如果有事务存在，则挂起当前事务。</strong></p>
+<p><strong>PROPAGATION_NEVER ：已非事务的方式运行，如果有事务存在，则抛出异常。</strong></p>
+<p><strong>PROPAGATION_NESTED ： 如果当前事务存在，则嵌套事务执行</strong></p>
+<h4 id="多个事务方法相互调用时-事务如何在这些方法间传播？"><a href="#多个事务方法相互调用时-事务如何在这些方法间传播？" class="headerlink" title="多个事务方法相互调用时,事务如何在这些方法间传播？"></a>多个事务方法相互调用时,事务如何在这些方法间传播？</h4><p>在方法a中调用方法b :如果方法a具有事务，则b方法使用方法a的事务。 如果a没有事务，请创建新事务。<strong>（</strong>A，b在同一事务中)</p>
+<h4 id="SpringCloud五大组件？"><a href="#SpringCloud五大组件？" class="headerlink" title="SpringCloud五大组件？"></a>SpringCloud五大组件？</h4><p>Eureka: 注册中心，用于服务的注册和发现</p>
+<p>Ribbon&#x2F;Feign: 负载均衡&#x2F;服务调用</p>
+<p>Hystrix: 断路器，提高分布式系统的弹性</p>
+<p>GateWay&#x2F;Zuul: 网关管理，由GateWay网关转发请求给对应的服务，服务同一的转发，以及权限管理和过滤</p>
+<p>SpringConfig: 分布式配置中心</p>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h4 id="数据库的三范式是什么？"><a href="#数据库的三范式是什么？" class="headerlink" title="数据库的三范式是什么？"></a>数据库的三范式是什么？</h4><p>第一范式：每个列都不可以在拆分。<br>第二范式：在第一范式的基础上，非主键列完全依赖于主键，而不能是依赖于主键的一部分。<br>第三范式：在第二范式的基础上，非主键列只依赖于主键，不依赖于其他非主键。</p>
+<h4 id="Oracle和MySQL的区别"><a href="#Oracle和MySQL的区别" class="headerlink" title="Oracle和MySQL的区别?"></a>Oracle和MySQL的区别?</h4><p>1、Oracle是大型数据库，而MySQL是中小型数据库。但是MySQL是开源的，Oracle是收费的<br>2、Oracle的内存占有量非常大，而mysql非常小<br>3、MySQL支持主键自增长，插入时会自动增长。Oracle主键一般使用序列。<br>4、MySQL分页用limit关键字，而Oracle使用rownum字段表明位置<br>5、MySQL中0、1判断真假，Oracle中true false<br>6、MySQL中命令默认commit,但是Oracle需要手动提交<br>7、MySQL在windows环境下大小写不敏感，在linux环境下区分大小写，Oracle不区分</p>
+<h4 id="varchar和varchar2的区别？"><a href="#varchar和varchar2的区别？" class="headerlink" title="varchar和varchar2的区别？"></a>varchar和varchar2的区别？</h4><p>varchar是标准sql里面的。 varchar2是oracle提供的独有的数据类型。</p>
+<p>varchar对于汉字占两个字节，对于数字，英文等是一个字节，占的内存小，varchar2都是占两个字节。</p>
+<p>varchar对空串不处理，varchar2将空串当做null来处理。</p>
+<p>varchar存放固定长度的字符串，最大长度是2000，varchar2是存放可变长度的字符串，最大长度是4000。</p>
+<h4 id="ACID是什么？"><a href="#ACID是什么？" class="headerlink" title="ACID是什么？"></a>ACID是什么？</h4><p>原子性，一致性，隔离性，持久性</p>
+<p>MySQL事务隔离分为不同级别，包括读未提交（Read uncommitted）、读提交（read committed）、可重复读（repeatable read）和串行化（Serializable）</p>
+<p>·    Atomicity（原子性）：一个事务（transaction）中的所有操作，或者全部完成，或者全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被恢复（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。即，事务不可分割、不可约简。</p>
+<p>·    Consistency（一致性）：在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设约束、触发器、级联回滚等。</p>
+<p>·    Isolation（隔离性）：数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括读未提交（Read uncommitted）、读提交（read committed）、可重复读（repeatable read）和串行化（Serializable）。</p>
+<p>·    Durability（持久性）：事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。</p>
+<p>多个并发事务可能引发的问题<br>脏读：脏读指的是读到了其他事务未提交的数据，未提交意味着这些数据可能会回滚，也就是可能最终不会存到数据库中，也就是不存在的数据。读到了并一定最终存在的数据，这就是脏读。<br>幻读：幻读是针对数据<strong>插入（INSERT）</strong>操作来说的。假设事务A对某些行的内容作了更改，但是还未提交，此时事务B插入了与事务A更改前的记录相同的记录行，并且在事务A提交之前先提交了，而这时，在事务A中查询，会发现好像刚刚的更改对于某些数据未起作用，但其实是事务B刚插入进来的，让用户感觉很魔幻，感觉出现了幻觉，这就叫幻读。<br>不可重复读：对比可重复读，不可重复读指的是在同一事务内，不同的时刻读到的同一批数据可能是不一样的，可能会受到其他事务的影响，比如其他事务改了这批数据并提交了。通常针对数据<strong>更新（UPDATE）</strong>操作。</p>
+<h4 id="MySQL数据库有哪些函数？"><a href="#MySQL数据库有哪些函数？" class="headerlink" title="MySQL数据库有哪些函数？"></a>MySQL数据库有哪些函数？</h4><p>MySQL 中的函数主要分为以下四类： 字符串函数、数值函数、日期函数、流程函数。</p>
+<h4 id="MySQL有哪些索引，它们分别在那种场景下使用"><a href="#MySQL有哪些索引，它们分别在那种场景下使用" class="headerlink" title="MySQL有哪些索引，它们分别在那种场景下使用?"></a>MySQL有哪些索引，它们分别在那种场景下使用?</h4><p><strong>MySQL主要有五种索引类型，分别是：</strong></p>
+<ol>
+<li>普通索引（NORMAL）</li>
+<li>唯一索引（UNIQUE）</li>
+<li>主键索引 （PRIMARY）</li>
+<li>组合索引</li>
+<li>全文索引（FULLTEXT）</li>
+</ol>
+<p>按数据结构分类可分为：<strong>B+tree索引、Hash索引、Full-text索引</strong>。 按物理存储分类可分为：<strong>聚簇索引、二级索引（辅助索引）</strong>。 按字段特性分类可分为：<strong>主键索引、普通索引、前缀索引</strong>。 按字段个数分类可分为：<strong>单列索引、联合索引（复合索引、组合索引）</strong>。</p>
+<h4 id="假如有a表数据，b表数据，如何保证两个表的数据库一致性？还有什么是一致性"><a href="#假如有a表数据，b表数据，如何保证两个表的数据库一致性？还有什么是一致性" class="headerlink" title="假如有a表数据，b表数据，如何保证两个表的数据库一致性？还有什么是一致性?"></a>假如有a表数据，b表数据，如何保证两个表的数据库一致性？还有什么是一致性?</h4><p><strong>使用唯一索引或者主键索引可以保证数据的唯一性</strong></p>
+<p>从数据库层面，数据库通过原子性、隔离性、持久性来保证一致性。也就是说ACID四大特性之中， C(一致性)是目的，A(原子性)、I(隔离性)、D(持久性)是手段，是为了保证一致性，数据库提供的手 段。数据库必须要实现AID三大特性，才有可能实现一致性。例如，原子性无法保证，显然一致性也 无法保证。</p>
+<p>从应用层面，通过代码判断数据库数据是否有效，然后决定回滚还是提交数据</p>
+<h4 id="Oracle和MySQL的分页查询？"><a href="#Oracle和MySQL的分页查询？" class="headerlink" title="Oracle和MySQL的分页查询？"></a>Oracle和MySQL的分页查询？</h4><p><strong>oracle数据库分页</strong></p>
+<p>  select * from</p>
+<p>  (select a.*,rownum rc from 表名 where rownum&lt;&#x3D;endrow) a</p>
+<p>  where a.rc&gt;&#x3D;startrow;</p>
+<p><strong>MySQL数据库分页</strong></p>
+<p>  Select * from 表名 limit startrow,pagesize; (Pagesize为每页显示的记录条数)</p>
+<p>  优化写法  Select a.* from 表名 a,(Select id from 表名 order by id limit startrow,pagesize) b where a.id&#x3D;b.id;</p>
+<h4 id="MySQL性能优化有哪些？"><a href="#MySQL性能优化有哪些？" class="headerlink" title="MySQL性能优化有哪些？"></a>MySQL性能优化有哪些？</h4><p>1.对查询进行优化，建立索引，加快检索速度</p>
+<p>2.避免在where子句中使用 ！&#x3D; 和 &lt;&gt;操作符 or来连接条件</p>
+<p>3.尽量避免使用游标，效率较差</p>
+<p><strong>任何地方都不要使用</strong> <strong>select * from t</strong> ，用具体的字段列表代替“*”，不要返回用不到的任何字段。</p>
+<p><strong>应尽量避免在<strong><strong>where</strong></strong>子句中对字段进行<strong><strong>null</strong></strong>值判断</strong></p>
+<p>否则将导致引擎放弃使用索引而进行全表扫描，如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> id <span class="keyword">from</span> t <span class="keyword">where</span> num <span class="keyword">is</span> <span class="keyword">null</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>应尽量避免在</strong> <strong>where</strong> <strong>子句中使用</strong> <strong>!&#x3D;</strong> <strong>或</strong> <strong>&lt;&gt;</strong> <strong>操作符</strong>，否则将引擎放弃使用索引而进行全表扫描。</p>
+<p><strong>应尽量避免在</strong> <strong>where</strong> <strong>子句中使用</strong> <strong>or</strong> <strong>来连接条件</strong>，如果一个字段有索引，一个字段没有索引，将导致引擎放弃使用索引而进行全表扫描，如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> id fromt <span class="keyword">where</span> num<span class="operator">=</span><span class="number">10</span> <span class="keyword">or</span> Name <span class="operator">=</span><span class="string">&#x27;admin&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>·    为搜索字段创建索引。</p>
+<p>·    避免使用 select *，列出需要查询的字段。</p>
+<p>·    垂直分割分表。</p>
+<p>·    选择正确的存储引擎。</p>
+<h4 id="MySQL的内连接、左连接、右连接有什么区别？"><a href="#MySQL的内连接、左连接、右连接有什么区别？" class="headerlink" title="MySQL的内连接、左连接、右连接有什么区别？"></a>MySQL的内连接、左连接、右连接有什么区别？</h4><p>内连接关键字：inner join；左连接：left join；右连接：right join。</p>
+<p>内连接是把匹配的关联数据显示出来；左连接是左边的表全部显示出来，右边的表显示出符合条件的数据；右连接正好相反。</p>
+<h2 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h2><h4 id="什么是redis"><a href="#什么是redis" class="headerlink" title="什么是redis?"></a>什么是redis?</h4><p>redis是一种nosql的以键值对数据库，它的基本数据结构String, set, list, hash, zset(有序列表)</p>
+<p>redis将所有数据放到内存中的做法让它读写性能十分惊人</p>
+<p>它的持久化机制使得在断电，机器故障等情况发生数据不丢失</p>
+<p>redis的数据放在内存中，</p>
+<p>redis还提供了键过期、发布订阅、事务、流水线、Lua脚本等多个附加功能</p>
+<p>运用场景：</p>
+<p>- 热点数据的缓存：redis访问速度块、支持的数据类型丰富,很适合用来存储热点数据。</p>
+<p>- 限时业务：redis中可以使用expire命令设置一个键的生存时间,到时间后redis会删除它。因此,Redis在限时业务中的表现很亮眼。</p>
+<p> - 计数器：incrby命令可以实现原子性的递增,所以可以运用于高并发的秒杀活动、分布式序列号的生成。</p>
+<p> - 排行榜：关系型数据库在排行榜方面查询速度普遍偏慢,所以可以借助redis的SortedSet进行热点数据的排序。 </p>
+<p>- 分布式锁：这个主要利用redis的setnx命令进行,在后面的如何用Redis实现一个分布式锁中会进行详解。 - 延时操作：redis自2.8.0之后版本提供Keyspace Notifications功能,允许客户订阅Pub&#x2F;Sub频道,以便以某种方式接收影响Redis数据集的事件。 </p>
+<p>- 分页查询、模糊查询：edis的set集合中提供了一个zrangebylex方法,通过ZRANGEBYLEX zset - + LIMIT 0 10 可以进行分页数据查询,其中- +表示获取全部数据；rangebylex key min max 这个就可以返回字典区间的数据可以利用这个特性可以进行模糊查询功能。 </p>
+<p>- 点赞,好友等相互关系的存储：Redis set对外提供的功能与list类似是一个列表的功能,特殊之处在于set是可以自动排重的,我们可以通过这一点实现类似共同好友等功能。</p>
+<p> - 队列：由于redis有list push和list pop这样的命令,所以能够很方便的执行队列操作。</p>
+<h4 id="redis常见的错误是什么？"><a href="#redis常见的错误是什么？" class="headerlink" title="redis常见的错误是什么？"></a>redis常见的错误是什么？</h4><p>Could not get a resource from the pool</p>
+<p>意思就是不能获取Redis连接池实例。</p>
+<p>All sentinels down, cannot determine where is mymaster_9487_6389 master is running…</p>
+<p>翻译：哨兵宕机, 不能确定主机位置</p>
+<p>原因1:redis主从机未正常启动</p>
+<p>原因2:写的哨兵地址不对</p>
+<h4 id="什么是缓存穿透？"><a href="#什么是缓存穿透？" class="headerlink" title="什么是缓存穿透？"></a>什么是缓存穿透？</h4><p>缓存穿透：指查询一个一定不存在的数据，由于缓存是不命中时需要从数据库查询，查不到数据则不写入缓存，这将导致这个不存在的数据每次请求都要到数据库去查询，造成缓存穿透。</p>
+<p>解决方案：最简单粗暴的方法如果一个查询返回的数据为空（不管是数据不存在，还是系统故障），我们就把这个空结果进行缓存，但它的过期时间会很短，最长不超过五分钟。</p>
+<h4 id="什么是缓存雪崩？"><a href="#什么是缓存雪崩？" class="headerlink" title="什么是缓存雪崩？"></a>什么是缓存雪崩？</h4><p>缓存雪崩就是指缓存由于某些原因（比如 宕机、cache服务挂了或者不响应）整体crash掉了，导致大量请求到达后端数据库，从而导致数据库崩溃，整个系统崩溃，发生灾难。</p>
+<p>导致这种现象可能的原因：</p>
+<p>1、例如 “缓存并发”，“缓存穿透”，“缓存颠簸” 等问题，这些问题也可能会被恶意攻击者所利用。</p>
+<p>2、例如 某个时间点内，系统预加载的缓存周期性集中失效了。解决方法：可以通过设置不同的过期时间，来错开缓存过期，从而避免缓存集中失效。</p>
+<h4 id="redis如何保证数据持久性"><a href="#redis如何保证数据持久性" class="headerlink" title="redis如何保证数据持久性"></a>redis如何保证数据持久性</h4><p>有两种方式</p>
+<p>1RDB持久化()：RDB持久化是指在指定的时间间隔内将内存中的数据集快照写入磁盘。也是默认的持久化方式，这种方式是就是将内存中数据以快照的方式写入到二进制文件中,默认的文件名为dump.rdb。</p>
+<p>2AOF持久化()：一种更加高效的方式AOF，工作机制很简单，redis会将每一个收到的写命令都通过write函数追加到文件中。通俗的理解就是日志记录。然后在服务重启以后，会执行这些命令来恢复数据。</p>
+<h4 id="redis是单线程还是多线程"><a href="#redis是单线程还是多线程" class="headerlink" title="redis是单线程还是多线程"></a>redis是单线程还是多线程</h4><p>Redis4.0之前是单线程运行的；Redis4.0后开始支持多线程。Redis4.0之前使用单线程的原因：</p>
+<p>1、单线程模式方便开发和调试；</p>
+<p>2、Redis内部使用了基于epoll的多路复用；</p>
+<p>3、Redis主要的性能瓶颈是内存或网络带宽</p>
+<p>6.0版本引用多线程</p>
+<h4 id="redis为什么引入多线程"><a href="#redis为什么引入多线程" class="headerlink" title="redis为什么引入多线程"></a>redis为什么引入多线程</h4><p>Redis基于内存操作，CPU并不是性能瓶颈，Redis的瓶颈是根据机器的内存和网络带宽。在<code>6.0的版本</code>中引入了多线程。</p>
+<h4 id="Redis-常见的性能问题都有哪些？如何解决？"><a href="#Redis-常见的性能问题都有哪些？如何解决？" class="headerlink" title="Redis 常见的性能问题都有哪些？如何解决？"></a>Redis 常见的性能问题都有哪些？如何解决？</h4><p>1).Master写内存快照，save命令调度rdbSave函数，会阻塞主线程的工作，当快照比较大时对性能影响是非常大的，会间断性暂停服务，所以Master最好不要写内存快照。</p>
+<p>2).Master AOF持久化，如果不重写AOF文件，这个持久化方式对性能的影响是最小的，但是AOF文件会不断增大，AOF文件过大会影响Master重启的恢复速度。Master最好不要做任何持久化工作，包括内存快照和AOF日志文件，特别是不要启用内存快照做持久化,如果数据比较关键，某个Slave开启AOF备份数据，策略为每秒同步一次。</p>
+<p>3).Master调用BGREWRITEAOF重写AOF文件，AOF在重写的时候会占大量的CPU和内存资源，导致服务load过高，出现短暂服务暂停现象。</p>
+<p>4). Redis主从复制的性能问题，为了主从复制的速度和连接的稳定性，Slave和Master最好在同一个局域网内</p>
+<h4 id="redis如何搭建主从复制"><a href="#redis如何搭建主从复制" class="headerlink" title="redis如何搭建主从复制"></a>redis如何搭建主从复制</h4><p>拷贝多个redis.conf文件include(写绝对路径)<br>开启daemonize yes<br>Pid文件名字pidfile<br>指定端口port<br>Log文件名字<br>dump.rdb名字dbfilename<br>Appendonly 关掉或者换名字</p>
+<h1 id="简述缓存穿透"><a href="#简述缓存穿透" class="headerlink" title="简述缓存穿透"></a>简述缓存穿透</h1><p>缓存穿透指缓存和数据库均没有需要查询的数据，攻击者不断发送这种请求，使数据库压力过大。</p>
+<h1 id="简述缓存穿透的解决方法"><a href="#简述缓存穿透的解决方法" class="headerlink" title="简述缓存穿透的解决方法"></a>简述缓存穿透的解决方法</h1><ul>
+<li>在数据库操作访问前进行校验，对不合法请求直接返回。</li>
+<li>对于经常被访问的，并且数据库没有的键，缓存层记录键&#x3D;null。</li>
+</ul>
+<h1 id="简述缓存击穿"><a href="#简述缓存击穿" class="headerlink" title="简述缓存击穿"></a>简述缓存击穿</h1><p>缓存击穿指缓存中没有数据，但数据库中有该数据。一般这种情况指特定数据的缓存时间到期，但由于并发用户访问该数据特别多，因此去数据库去取数据，引起数据库访问压力过大</p>
+<h1 id="简述缓存穿透的解决方法-1"><a href="#简述缓存穿透的解决方法-1" class="headerlink" title="简述缓存穿透的解决方法"></a>简述缓存穿透的解决方法</h1><ul>
+<li>设置热点数据永远不过期。</li>
+<li>对并发读数据设置并发锁，降低并发性</li>
+</ul>
+<h1 id="简述缓存雪崩"><a href="#简述缓存雪崩" class="headerlink" title="简述缓存雪崩"></a>简述缓存雪崩</h1><p>缓存雪崩指缓存中一大批数据到过期时间，而从缓存中删除。但该批数据查询数据量巨大，查询全部走数据库，造成数据库压力过大。</p>
+<h1 id="简述缓存雪崩的解决方法"><a href="#简述缓存雪崩的解决方法" class="headerlink" title="简述缓存雪崩的解决方法"></a>简述缓存雪崩的解决方法</h1><ul>
+<li>缓存数据设置随机过期时间，防止同一时间大量数据过期。</li>
+<li>设置热点数据永远不过期。</li>
+<li>对于集群部署的情况，将热点数据均与分布在不同缓存中。</li>
+</ul>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-hello-world"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2022/10/25/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2022/10/25/hello-world/" class="article-date">
+	  <time datetime="2022-10-25T08:48:00.712Z" itemprop="datePublished">十月 25, 2022</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+
+
+</section>
+          <aside id="sidebar">
+  
+    <div class="widget-wrap" style="margin: 20px 0;">
+	<div id="search-form-wrap">
+
+    <form class="search-form">
+        <label style="width: 75%;">
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" class="search-field" style="height: 42px;" placeholder=" Search…" value="" name="s" title="Search for:">
+        </label>
+        <input type="submit" class="search-form-submit" value="Search">
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+</div>
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Connect With Us</h3>
+    <div class="widget widget_athemes_social_icons">
+
+    	<ul class="clearfix widget-social-icons">   
+    	
+          
+     			  <li><a target="_blank" rel="noopener" href="https://github.com/iTimeTraveler" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a target="_blank" rel="noopener" href="http://www.yoursite.com" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Flickr"><i class="fa fa-flickr" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+            <li><a href="mailto:?subject=请联系我&body=我能帮你什么" title="email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> 
+          
+   		
+   		</ul>
+
+
+   		<!--
+   		<ul class="clearfix widget-social-icons">   		
+   		<li class="widget-si-twitter"><a target="_blank" rel="noopener" href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
+		<li class="widget-si-facebook"><a target="_blank" rel="noopener" href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
+			<li class="widget-si-gplus"><a target="_blank" rel="noopener" href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
+			<li class="widget-si-pinterest"><a target="_blank" rel="noopener" href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
+			<li class="widget-si-flickr"><a target="_blank" rel="noopener" href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
+			<li class="widget-si-instagram"><a target="_blank" rel="noopener" href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
+		</ul> -->
+
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget_athemes_tabs">
+    <ul id="widget-tab" class="clearfix widget-tab-nav">
+      <li class="active"><a>Recent Posts</a></li>
+    </ul>
+    <div class="widget">
+      <ul>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2022/10/25/Java%E9%9D%A2%E8%AF%95%E5%86%B2%E5%87%BB/">Java面试冲击</a></h6>
+              <span>十月 25, 2022</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2022/10/25/hello-world/">Hello World</a></h6>
+              <span>十月 25, 2022</span>
+            </div>
+
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Java/" style="font-size: 10px;">Java</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">十月 2022</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2022 DemoYang All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
