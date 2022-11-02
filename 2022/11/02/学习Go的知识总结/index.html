@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>学习go的知识总结 | DemoYang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="go" />
+  
+  
+  
+  
+  <meta name="description" content="Go语言 1.配置环境变量GOPATH 加路径 GOROOT 加路径 修改环境变量 Setx GOPATH 加要修改的路径 Setx GOROOT 加要修改的路径 两个重要的配置修改 $env:GO111MODULE&#x3D;”on” $env:GOPROXY&#x3D;”http:&#x2F;&#x2F;goproxy.cn&quot; 2.Go相关命令build: 编译包和依赖 clean: 移除对象文件  d">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习Go的知识总结">
+<meta property="og:url" content="http://example.com/2022/11/02/%E5%AD%A6%E4%B9%A0Go%E7%9A%84%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="DemoYang">
+<meta property="og:description" content="Go语言 1.配置环境变量GOPATH 加路径 GOROOT 加路径 修改环境变量 Setx GOPATH 加要修改的路径 Setx GOROOT 加要修改的路径 两个重要的配置修改 $env:GO111MODULE&#x3D;”on” $env:GOPROXY&#x3D;”http:&#x2F;&#x2F;goproxy.cn&quot; 2.Go相关命令build: 编译包和依赖 clean: 移除对象文件  d">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-11-02T09:21:20.000Z">
+<meta property="article:modified_time" content="2022-11-02T09:22:26.607Z">
+<meta property="article:author" content="yang">
+<meta property="article:tag" content="go">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="DemoYang" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-0123456789ABCDEF",
+          enable_page_level_ads: true
+      });
+  </script>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "Home"; 
+
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/categories"] = "Categories"; 
+
+  themeMenus["/tags"] = "Tags"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="DemoYang" rel="home"> DemoYang </a>
+            
+          </h1>
+
+          
+            <div class="site-description">记录学习Java和Go的知识总结</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-学习Go的知识总结" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      学习Go的知识总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2022/11/02/%E5%AD%A6%E4%B9%A0Go%E7%9A%84%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="article-date">
+	  <time datetime="2022-11-02T09:21:20.000Z" itemprop="datePublished">十一月 2, 2022</time>
+	</a>
+
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Go语言</p>
+<h2 id="1-配置环境变量"><a href="#1-配置环境变量" class="headerlink" title="1.配置环境变量"></a>1.配置环境变量</h2><p>GOPATH 加路径</p>
+<p>GOROOT 加路径</p>
+<p>修改环境变量</p>
+<p>Setx GOPATH 加要修改的路径</p>
+<p>Setx GOROOT 加要修改的路径</p>
+<p>两个重要的配置修改</p>
+<p>$env:GO111MODULE&#x3D;”on”</p>
+<p>$env:GOPROXY&#x3D;”<a target="_blank" rel="noopener" href="http://goproxy.cn&quot;/">http://goproxy.cn&quot;</a></p>
+<h2 id="2-Go相关命令"><a href="#2-Go相关命令" class="headerlink" title="2.Go相关命令"></a>2.<strong>Go相关命令</strong></h2><p>build: 编译包和依赖</p>
+<p>clean: 移除对象文件 </p>
+<p>doc: 显示包或者符号的文档</p>
+<p>env: 打印go的环境信息</p>
+<p>bug: 启动错误报告</p>
+<p>fix: 运行gofmt进行格式化</p>
+<p>generate: 从processing source生成go文件</p>
+<p>get: 下载并安装包和依赖</p>
+<p>install: 编译并安装包和依赖</p>
+<p>list: 列出包</p>
+<p>run: 编译并运行go程序</p>
+<p>test:运行测试</p>
+<p>tool: 运行go提供的工具</p>
+<p>version: 显示go的版本</p>
+<p>vet: 运行go tool vet</p>
+<p>常用快捷键</p>
+<p>CTRL+ &#x2F;  行注释</p>
+<p>shift+alt+a 块注释</p>
+<p>ctrl + a 全选</p>
+<p>ctrl+ c 复制</p>
+<p>ctrl+v 粘贴</p>
+<p>ctrl+shift+k 删除行</p>
+<p>ctrl+e 查找文件</p>
+<p>ctrl+shift+p 打开设置命令行</p>
+<p>快速生成代码片段</p>
+<p>pkgm   main包+main主函数</p>
+<p>ff  fmt.Printf(“”, var)</p>
+<p>for for i :&#x3D; 0; 1 &lt; count; i++{}</p>
+<h2 id="Go-常见的格式化指令表示"><a href="#Go-常见的格式化指令表示" class="headerlink" title="Go 常见的格式化指令表示"></a>Go 常见的格式化指令表示</h2><p>格式化指令	含义<br>%%	%字面量<br>%b	一个二进制整数，将一个整数格式转化为二进制的表达方式<br>%c	一个Unicode的字符<br>%d	十进制整数<br>%o	八进制整数<br>%x	小写的十六进制数值<br>%X	大写的十六进制数值<br>%U	一个Unicode表示法表示的整型码值<br>%s	输出以原生的UTF8字节表示的字符，如果console不支持utf8编码，则会乱码<br>%t	以true或者false的方式输出布尔值<br>%v	使用默认格式输出值，或者如果方法存在，则使用类性值的String()方法输出自定义值<br>%T	输出值的类型</p>
+<h2 id="golang变量"><a href="#golang变量" class="headerlink" title="golang变量"></a><strong>golang变量</strong></h2><p>变量是计算机语言中能<strong>储存</strong>计算结果或表示值的概念</p>
+<p>声明变量必须使用</p>
+<p>声明变量的语法</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> identifier <span class="keyword">type</span></span><br></pre></td></tr></table></figure>
+
+<p>var:声明变量关键字</p>
+<p>identifier: 变量名称</p>
+<p>type: 变量类型</p>
+<p><strong>变量的初始化</strong></p>
+<p>var 变量名 类型 &#x3D; 表达式</p>
+<p>var name string &#x3D; “张三”</p>
+<p>初始化多个变量</p>
+<p>var name, age，gender &#x3D; “张三” ，20 ， “男”</p>
+<p>短变量声明  :&#x3D;</p>
+<p>在函数内部，可以使用  :&#x3D;  运算符对变量进行声明和初始化</p>
+<h2 id="golang常量"><a href="#golang常量" class="headerlink" title="golang常量"></a>golang常量</h2><p>定义一个常量使用const关键字，语法格式如下</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> constantName [<span class="keyword">type</span>] = value</span><br></pre></td></tr></table></figure>
+
+<p>const: 定义常量的关键字</p>
+<p>constantName: 常量名称</p>
+<p>type: 常量类型</p>
+<p>value: 常量的值</p>
+<p><strong>常量 iota</strong></p>
+<p>一个可编译器修改的常量，它的默认开始值是0，每调用一次加1</p>
+<p>遇到const关键字设为0</p>
+<h2 id="golang语言数据类型"><a href="#golang语言数据类型" class="headerlink" title="golang语言数据类型"></a>golang语言数据类型</h2><p>go数据类型用于声明函数和变量</p>
+<p>数据类型的出现是为了把数据分成所需内存大小不同的数据，编程的时候需要用大数据的时候才需要申请大内存，就可以充分利用内存</p>
+<p>1.布尔型   值通常是false和true  例如 var b bool &#x3D; true</p>
+<p>2.数字类型  整型int 和浮点型 float32 、float64  ,并且支持复数，其中位的运算采用补码</p>
+<p>3.字符串类型 字符串就是一串固定长度的字符连接起来的字符序列，go的字符串是由单个字节连接起来的 ，字节使用UTF-8编码标识Unicode文本</p>
+<p>4.派生类型</p>
+<p>a,指针类型（Pointer）</p>
+<p>b,数组类型</p>
+<p>c,结构化类型（struct）</p>
+<p>d,Channel类型</p>
+<p>e,函数类型</p>
+<p>f,切片类型</p>
+<p>g,接口类型（interface）</p>
+<p>h,Map类型</p>
+<h2 id="golang标识符"><a href="#golang标识符" class="headerlink" title="golang标识符"></a>golang标识符</h2><p>标识符的英文是identifer, 通俗来讲就是给变量、常量、函数、方法、结构体、数组、切片、接口起名字。</p>
+<p>标识符的组成</p>
+<ol>
+<li>标识符由数字、字母、和下划线(…)组成</li>
+<li>只能以字母和下划线开头</li>
+<li>标识符区分大小写</li>
+</ol>
+<h2 id="golang语言关键字"><a href="#golang语言关键字" class="headerlink" title="golang语言关键字"></a>golang语言关键字</h2><p>break  default  func interface select</p>
+<p>case  defer go map struct[结构]</p>
+<p>chan[通道] else goto[转到] package switch</p>
+<p>const[常量] fallthrough[落空、失败] if range[范围] type</p>
+<p>continue for import return var</p>
+<p>预定义标识符</p>
+<p>分为基本类型的名称和基本的内置函数</p>
+<p>append[添加]  bool byte cap close complex[复杂] complex64 complex128  uint16</p>
+<p>copy false  float32 float64 imag int int8 int16  uint32</p>
+<p>int32 int64 iota[极微小] len make new nil[零] panic[恐慌] uint64</p>
+<p>print println real recover[恢复] string true uint uint8 uintptr[方法、指针]</p>
+<p>go数字类型</p>
+<p>整形：</p>
+<p>int8(-128-&gt;127)</p>
+<p>int16(-32768-&gt;32767)</p>
+<p>int32(-2,147,483,648-&gt;2,147,483,647)</p>
+<h2 id="golang字符串"><a href="#golang字符串" class="headerlink" title="golang字符串"></a>golang字符串</h2><p>一个Go语言字符串是一个任意 <strong>字节的常量序列</strong></p>
+<p>go语言字符串字面量</p>
+<p>字符串字面量使用双引号 “”或者反引号 ‘  来创建。双引号用来创建可解析的字符串，支持转义，但不能用来引用多行，反引号用来创建原生的字符串字面量，可能由多行组成，但不支持转义，并且可以包含除了反引号外其他所有字符。双引号创建可解析的字符串应用最广泛，反引号用来创建原生的字符串则多用于书写多行消息，HTML以及正则表达式。</p>
+<p>go语言字符转义字符</p>
+<table>
+<thead>
+<tr>
+<th>\r</th>
+<th>回车符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符</td>
+</tr>
+<tr>
+<td>&#39;</td>
+<td>单引号</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>双引号</td>
+</tr>
+<tr>
+<td>\</td>
+<td>反斜杠</td>
+</tr>
+</tbody></table>
+<h2 id="golang运算符"><a href="#golang运算符" class="headerlink" title="golang运算符"></a>golang运算符</h2><p>1.算术运算符</p>
+<p>2.关系运算符</p>
+<p>3.逻辑运算符</p>
+<p>4.位运算符</p>
+<p>5.赋值运算符</p>
+<p><strong>注意</strong>：++（自增） –（自减）在go是单独语句，并不是运算符</p>
+<h2 id="golang语言中语法"><a href="#golang语言中语法" class="headerlink" title="golang语言中语法"></a>golang语言中语法</h2><p>if else if else语句</p>
+<p>if 布尔表达式1 {</p>
+<p>} else if 布尔表达式2 {</p>
+<p>}else{</p>
+<p>}</p>
+<p>switch语句</p>
+<p>switch var1{</p>
+<p>case val1</p>
+<p>…</p>
+<p>case val2</p>
+<p>…</p>
+<p>default:</p>
+<p>…</p>
+<p>}</p>
+<p>for语句</p>
+<p>for 初始语句; 条件表达式; 结束语句{</p>
+<p>​         循环语句体</p>
+<p>}</p>
+<p>for range循环</p>
+<p>Go语言中可以使用for range遍历数组、切片、字符串、map及通道（channel），通过for range遍历的返回值有以下规律：</p>
+<p>1、数组、切片、字符串返回索引和值</p>
+<p>2、map返回键和值</p>
+<p>3、通道（channel）只返回通道内的值</p>
+<h2 id="golang数组"><a href="#golang数组" class="headerlink" title="golang数组"></a>golang数组</h2><p>数组是相同数据类型的一组数据的集合，数组一旦定义长度不能修改，数组可以通过下标（或者叫索引）访问元素。</p>
+<h2 id="golang语言数组的定义"><a href="#golang语言数组的定义" class="headerlink" title="golang语言数组的定义"></a>golang语言数组的定义</h2><p>定义如下:</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> variable_name [SIZE] variable_type</span><br></pre></td></tr></table></figure>
+
+<p>variable_name: 数组名称</p>
+<p>SIZE: 数组长度，必须是常量</p>
+<p>variable_type: 数组保存元素的类型</p>
+<h2 id="golang切片"><a href="#golang切片" class="headerlink" title="golang切片"></a>golang切片</h2><p>前面我们学习了数组，数组是固定长度，可以容纳相同数据类型的元素的集合。当长度固定时，使用还是带来一些限制，比如：我们申请的长度太大浪费内存，太小又不够用。</p>
+<p>鉴于上述原因，我们有了go语言的切片，可以把切片理解为，可变长度的数组，其实它底层就是使用数组实现的，增加了自动扩容功能，切片（slice）是一个拥有相同类型元素的可变长度的序列。</p>
+<p>go语言切片的语法</p>
+<p>声明一个切片和声明一个数组类似，只要不添加长度就可以了</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> identifer []<span class="keyword">type</span></span><br></pre></td></tr></table></figure>
+
+<p>切片是引用类型，可以使用make函数来创建切片：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> slice1 []<span class="keyword">type</span> = <span class="built_in">make</span>([]<span class="keyword">type</span>, <span class="built_in">len</span>)</span><br></pre></td></tr></table></figure>
+
+<p>简写为：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">slice1 := <span class="built_in">make</span>([]<span class="keyword">type</span>, <span class="built_in">len</span>)</span><br></pre></td></tr></table></figure>
+
+<p>也可以指定容量，其中capacity为可选参数</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">make</span>([]T, length, capacity)</span><br></pre></td></tr></table></figure>
+
+<p>这里len是数组的长度并且也是切片的初始长度。</p>
+<h2 id="golang-map"><a href="#golang-map" class="headerlink" title="golang map"></a>golang map</h2><p>map是一种key:value键值对的数据结构容器，map内部实现是哈希表hash。</p>
+<p>map最重要的一点是通过key来快速检索数据，指向数据的值。</p>
+<p>map是引用类型的。</p>
+<p>map语法</p>
+<p>可以使用内建函数make也可以使用map关键字来定义map</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> map_variable <span class="keyword">map</span>[key_data_type]value_data_type</span><br><span class="line"></span><br><span class="line">map_variable = <span class="built_in">make</span>(<span class="keyword">map</span>[key_data_type]value_data_type)</span><br></pre></td></tr></table></figure>
+
+<p>map_variable: map的变量名称</p>
+<p>key_data_type: key的数据类型</p>
+<p>value_data_type: 值的数据类型</p>
+<h2 id="golang函数"><a href="#golang函数" class="headerlink" title="golang函数"></a>golang函数</h2><h3 id="golang函数介绍"><a href="#golang函数介绍" class="headerlink" title="golang函数介绍"></a>golang函数介绍</h3><p>函数的go语言中的一级公民，我们把所有的功能单元都定义在函数中，可以重复使用，函数包含函数的名称、参数列表和返回值类型，这些构成了函数的签名（signature）。</p>
+<h3 id="go语言中函数特性"><a href="#go语言中函数特性" class="headerlink" title="go语言中函数特性"></a>go语言中函数特性</h3><p>1.go语言中有3种函数，普通函数，匿名函数（没有名称的函数）、方法（定义在struct上的函数）。</p>
+<p>2.go语言中不允许函数重载（overload），也就是说不允许函数同名。</p>
+<p>3.go语言中的函数不能嵌套函数，但可以嵌套匿名函数。</p>
+<p>4.函数是一个值，可以将函数赋值给变量，使得这个变量也成为函数。</p>
+<p>5.函数可以作为参数传递给另一个函数。</p>
+<p>6.函数的返回值可以是一个函数。</p>
+<p>7.函数调用的时候，如果有参数传递给函数，则先拷贝参数的副本，再将副本传递给函数。</p>
+<p>8.函数可以没有名称。</p>
+<h3 id="go语言中的函数的定义和调用"><a href="#go语言中的函数的定义和调用" class="headerlink" title="go语言中的函数的定义和调用"></a>go语言中的函数的定义和调用</h3><p>函数在使用之前必须先定义，可以调用函数来完成某个任务。函数可以重复调用，从而达到代码重用。</p>
+<h3 id="go语言函数定义语法"><a href="#go语言函数定义语法" class="headerlink" title="go语言函数定义语法"></a>go语言函数定义语法</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">name</span> <span class="params">([parameter list] [return_type])</span></span>&#123;</span><br><span class="line"></span><br><span class="line">​	函数体</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>语法解析</p>
+<p>func: 函数由func开始声明</p>
+<p>name: 函数名称，函数名和参数列表一起构成函数签名。</p>
+<p>[parameter list] : 参数列表，参数就像一个占位符，当函数被调用时，你可以将值传递给参数，这个值被称为实际参数，参数列表指定的是参数类型、顺序、及参数个数。参数是可选的，也就是说函数也可以不含参数。</p>
+<p>[return_type]：返回类型 ，函数返回一列值。</p>
+<h2 id="golang函数类型与函数变量"><a href="#golang函数类型与函数变量" class="headerlink" title="golang函数类型与函数变量"></a>golang函数类型与函数变量</h2><p>可以使用type关键字来定义一个函数类型，语法格式如下：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> fun <span class="function"><span class="keyword">func</span><span class="params">(<span class="type">int</span>, <span class="type">int</span>)</span></span> <span class="type">int</span></span><br></pre></td></tr></table></figure>
+
+<p>上面语句定义了一个fun函数类型，它是一种函数类型，这种函数接收两个int类型的参数并且返回一个int类型的返回值。</p>
+<h2 id="golang高阶函数"><a href="#golang高阶函数" class="headerlink" title="golang高阶函数"></a>golang高阶函数</h2><p>go语言的函数，可以作为函数的参数，传递给另外一个函数，作为另外一个函数的返回值返回。</p>
+<h2 id="golang匿名函数"><a href="#golang匿名函数" class="headerlink" title="golang匿名函数"></a>golang匿名函数</h2><p>go语言函数不能嵌套，但是在函数内部可以定义匿名函数，实现一下简单功能调用。</p>
+<p>所谓匿名函数就是，没有名称的函数。</p>
+<p>语法格式如下：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(参数列表)</span></span>(返回值)</span><br></pre></td></tr></table></figure>
+
+<p>当然可以没有参数，可以没有返回值</p>
+<h2 id="golang闭包"><a href="#golang闭包" class="headerlink" title="golang闭包"></a>golang闭包</h2><p>闭包可以理解应定义在一个函数内部的函数。在本质上，闭包是将函数外部连接起来的桥梁，或者说是函数和其引用环境的组合体。</p>
+<p>闭包指的是一个函数和与其相关的引用环境组合而成的实体，简单来说，闭包&#x3D;函数+引用环境</p>
+<h4 id="golang递归"><a href="#golang递归" class="headerlink" title="golang递归"></a>golang递归</h4><p>函数内部调用函数自身的函数称为递归函数。</p>
+<p>使用递归函数最重要的三点：</p>
+<p>1.递归就是自己调用自己。</p>
+<p>2.必须先定义函数的退出条件，没有退出条件，递归将成为死循环。</p>
+<p>3.go语言递归函数很有可能会产生一大堆的goroutine, 也很可能会出现栈空间内存溢出问题。</p>
+<h4 id="golang结构"><a href="#golang结构" class="headerlink" title="golang结构"></a>golang结构</h4><p>Go 中的结构也是一种数据结构，它可包含零个或多个任意类型的字段，并将它们表示为单个实体。</p>
+<p>声明结构，使用struct关键字</p>
+<p>结构嵌入</p>
+<p>通过 Go 中的结构，可将某结构嵌入到另一结构中。 有时，你需要减少重复并重用一种常见的结构。</p>
+<h4 id="golang-defer语句"><a href="#golang-defer语句" class="headerlink" title="golang defer语句"></a>golang defer语句</h4><p>go语言中的defer语句会将其后面跟随的语句进行延迟处理，在defer归属的函数即将返回时，将延迟处理的语句按defer定义的逆序进行执行，也就是说，先被defer的语句最后被执行，最后被defer的语句，最先被执行。</p>
+<p>defer特性</p>
+<p>1.关键字defer用于注册延迟调用</p>
+<p>2.这些调用直到return前才被执行，因此，可以用来做资源清理</p>
+<p>3.多个defer语句，按先进后出方式执行</p>
+<p>4.defer语句中的变量，在defer声明时就决定了</p>
+<p>defer用途</p>
+<p>1.关闭文件句柄</p>
+<p>2.锁资源释放</p>
+<p>3.数据库连接释放</p>
+<h4 id="golang-init函数"><a href="#golang-init函数" class="headerlink" title="golang init函数"></a>golang init函数</h4><p>golang有一个特殊的函数init函数，先于main函数执行，实现包级别的一些初始化操作。</p>
+<p>init函数的主要特点</p>
+<p>init函数先于main函数自动执行，不能被其他函数调用；</p>
+<p>init函数没有输入参数、返回值；</p>
+<p>每个包可以有多个init函数；</p>
+<p>包的每个源文件也可以有多个init函数，这点比较特殊；</p>
+<p>同一个包的init执行顺序，golang没有明确定义，编程时要注意程序不要依赖这个执行顺序。</p>
+<p>不同包的init函数按照包导入的依赖关系执行顺序。</p>
+<h4 id="golang初始化顺序"><a href="#golang初始化顺序" class="headerlink" title="golang初始化顺序"></a>golang初始化顺序</h4><p>初始化顺序：变量初始化-&gt;init()-&gt;main()</p>
+<h4 id="golang指针"><a href="#golang指针" class="headerlink" title="golang指针"></a>golang指针</h4><p>Go语言中的函数传参都是拷贝，当我们想要修改某个变量的时候，我们可以创建一个指向该变量地址的指针变量。传递数据使用指针，而无须拷贝数据。</p>
+<p>类型指针不能进行偏移和运算。</p>
+<p>Go语言中的指针操作非常简单，只需要记住两个符号：&amp;（取地址）和 *（根据地址取值）。</p>
+<p>指针地址和指针类型</p>
+<p>每个变量在运行时都有拥有一个地址，这个地址代表变量在内存中的位置。Go语言中使用&amp;字符放在变量前面对变量进行取地址操作。Go语言中的值类型(int、float、bool、string、array、struct)都有对应的指针类型，如：<em>int  、 * int64、</em>string等。</p>
+<p>指针语法</p>
+<p>一个指针变量指向了一个值的内存地址。（也就是我们声明了一个指针之后，可以像变量赋值一样，把一个值的内存地址放入到指针当中。）</p>
+<p>类似于变量和常量，在使用指针前你需要声明指针。指针声明格式如下：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> var_name *<span class="keyword">var</span>-<span class="keyword">type</span></span><br></pre></td></tr></table></figure>
+
+<p>var-type: 为指针类型</p>
+<p>var_name: 为指针变量名</p>
+<p>*：用于指定变量是作为一个指针。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+
+      
+        <div id="donation_div"></div>
+
+
+<script src="/js/vdonate.js"></script>
+
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png',
+  alipayImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg'
+});
+</script>
+      
+            
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/10/25/Java%E9%9D%A2%E8%AF%95%E5%86%B2%E5%87%BB/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java面试冲击</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">1.</span> <span class="nav-text">1.配置环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Go%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">2.Go相关命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Go-%E5%B8%B8%E8%A7%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8C%87%E4%BB%A4%E8%A1%A8%E7%A4%BA"><span class="nav-number">3.</span> <span class="nav-text">Go 常见的格式化指令表示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E5%8F%98%E9%87%8F"><span class="nav-number">4.</span> <span class="nav-text">golang变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E5%B8%B8%E9%87%8F"><span class="nav-number">5.</span> <span class="nav-text">golang常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E8%AF%AD%E8%A8%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">6.</span> <span class="nav-text">golang语言数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">7.</span> <span class="nav-text">golang标识符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E8%AF%AD%E8%A8%80%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-number">8.</span> <span class="nav-text">golang语言关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">9.</span> <span class="nav-text">golang字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">10.</span> <span class="nav-text">golang运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E8%AF%AD%E8%A8%80%E4%B8%AD%E8%AF%AD%E6%B3%95"><span class="nav-number">11.</span> <span class="nav-text">golang语言中语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E6%95%B0%E7%BB%84"><span class="nav-number">12.</span> <span class="nav-text">golang数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E8%AF%AD%E8%A8%80%E6%95%B0%E7%BB%84%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">13.</span> <span class="nav-text">golang语言数组的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E5%88%87%E7%89%87"><span class="nav-number">14.</span> <span class="nav-text">golang切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang-map"><span class="nav-number">15.</span> <span class="nav-text">golang map</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E5%87%BD%E6%95%B0"><span class="nav-number">16.</span> <span class="nav-text">golang函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#golang%E5%87%BD%E6%95%B0%E4%BB%8B%E7%BB%8D"><span class="nav-number">16.1.</span> <span class="nav-text">golang函数介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#go%E8%AF%AD%E8%A8%80%E4%B8%AD%E5%87%BD%E6%95%B0%E7%89%B9%E6%80%A7"><span class="nav-number">16.2.</span> <span class="nav-text">go语言中函数特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#go%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E8%B0%83%E7%94%A8"><span class="nav-number">16.3.</span> <span class="nav-text">go语言中的函数的定义和调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#go%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89%E8%AF%AD%E6%B3%95"><span class="nav-number">16.4.</span> <span class="nav-text">go语言函数定义语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%87%BD%E6%95%B0%E5%8F%98%E9%87%8F"><span class="nav-number">17.</span> <span class="nav-text">golang函数类型与函数变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="nav-number">18.</span> <span class="nav-text">golang高阶函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0"><span class="nav-number">19.</span> <span class="nav-text">golang匿名函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#golang%E9%97%AD%E5%8C%85"><span class="nav-number">20.</span> <span class="nav-text">golang闭包</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#golang%E9%80%92%E5%BD%92"><span class="nav-number">20.0.1.</span> <span class="nav-text">golang递归</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#golang%E7%BB%93%E6%9E%84"><span class="nav-number">20.0.2.</span> <span class="nav-text">golang结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#golang-defer%E8%AF%AD%E5%8F%A5"><span class="nav-number">20.0.3.</span> <span class="nav-text">golang defer语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#golang-init%E5%87%BD%E6%95%B0"><span class="nav-number">20.0.4.</span> <span class="nav-text">golang init函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#golang%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F"><span class="nav-number">20.0.5.</span> <span class="nav-text">golang初始化顺序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#golang%E6%8C%87%E9%92%88"><span class="nav-number">20.0.6.</span> <span class="nav-text">golang指针</span></a></li></ol></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2022 DemoYang All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
